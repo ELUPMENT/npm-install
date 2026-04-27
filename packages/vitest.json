@@ -1,0 +1,15 @@
+{
+  "name": "vitest",
+  "version": "0.25.0",
+  "description": "A blazing fast unit test framework powered by Vite",
+  "license": "MIT",
+  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitest-dev/vitest.git",
+    "directory": "packages/vitest"
+  },
+  "homepage": "https://github.com/vitest-dev/vitest#readme",
+  "installedAt": "2026-04-27T06:05:47.388Z",
+  "source": "batch-download"
+}

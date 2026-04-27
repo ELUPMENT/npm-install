@@ -1,0 +1,11 @@
+{
+  "name": "querystringify",
+  "version": "2.1.1",
+  "installedAt": "2026-04-27T01:18:39.237Z",
+  "registry": "http://localhost:4873",
+  "description": "Querystringify - Small, simple but powerful query string parser.",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 3
+}

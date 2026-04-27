@@ -1,0 +1,11 @@
+{
+  "name": "acorn-walk",
+  "version": "8.0.2",
+  "installedAt": "2026-04-27T01:18:39.252Z",
+  "registry": "http://localhost:4873",
+  "description": "ECMAScript (ESTree) AST walker",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

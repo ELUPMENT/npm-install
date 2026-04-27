@@ -1,0 +1,13 @@
+{
+  "name": "tr46",
+  "version": "3.0.0",
+  "installedAt": "2026-04-27T01:18:39.118Z",
+  "registry": "http://localhost:4873",
+  "description": "An implementation of the Unicode UTS #46: Unicode IDNA Compatibility Processing",
+  "dependencies": {
+    "punycode": "^2.1.1"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 3
+}

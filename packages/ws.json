@@ -1,0 +1,14 @@
+{
+  "name": "ws",
+  "version": "8.11.0",
+  "installedAt": "2026-04-27T01:18:39.027Z",
+  "registry": "http://localhost:4873",
+  "description": "Simple to use, blazing fast and thoroughly tested websocket client and server for Node.js",
+  "dependencies": {},
+  "peerDependencies": {
+    "bufferutil": "^4.0.1",
+    "utf-8-validate": "^5.0.2"
+  },
+  "isTransitive": true,
+  "depth": 1
+}

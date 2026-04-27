@@ -1,0 +1,11 @@
+{
+  "name": "cssom",
+  "version": "0.3.6",
+  "installedAt": "2026-04-27T01:18:39.111Z",
+  "registry": "http://localhost:4873",
+  "description": "CSS Object Model implementation and CSS parser",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

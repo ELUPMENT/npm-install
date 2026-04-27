@@ -1,0 +1,14 @@
+{
+  "name": "element-plus",
+  "version": "2.13.0",
+  "description": "A Component Library for Vue 3",
+  "license": "MIT",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/element-plus/element-plus.git"
+  },
+  "homepage": "https://element-plus.org/",
+  "installedAt": "2026-04-27T06:04:21.043Z",
+  "source": "batch-download"
+}

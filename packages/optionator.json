@@ -1,0 +1,18 @@
+{
+  "name": "optionator",
+  "version": "0.8.1",
+  "installedAt": "2026-04-27T01:18:39.134Z",
+  "registry": "http://localhost:4873",
+  "description": "option parsing and help generation",
+  "dependencies": {
+    "prelude-ls": "~1.1.2",
+    "deep-is": "~0.1.3",
+    "wordwrap": "~1.0.0",
+    "type-check": "~0.3.2",
+    "levn": "~0.3.0",
+    "fast-levenshtein": "^1.1.0"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@vitejs/plugin-vue",
+  "version": "5.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "Evan You",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitejs/vite-plugin-vue.git",
+    "directory": "packages/plugin-vue"
+  },
+  "homepage": "https://github.com/vitejs/vite-plugin-vue/tree/main/packages/plugin-vue#readme",
+  "installedAt": "2026-04-27T06:04:52.437Z",
+  "source": "batch-download"
+}

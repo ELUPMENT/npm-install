@@ -1,0 +1,11 @@
+{
+  "name": "acorn",
+  "version": "8.1.0",
+  "installedAt": "2026-04-27T01:18:39.249Z",
+  "registry": "http://localhost:4873",
+  "description": "ECMAScript parser",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

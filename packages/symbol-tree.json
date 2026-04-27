@@ -1,0 +1,11 @@
+{
+  "name": "symbol-tree",
+  "version": "3.2.4",
+  "installedAt": "2026-04-27T01:18:39.198Z",
+  "registry": "http://localhost:4873",
+  "description": "Turn any collection of objects into its own efficient tree or linked list using Symbol",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

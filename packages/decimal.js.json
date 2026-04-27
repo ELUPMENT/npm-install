@@ -1,0 +1,11 @@
+{
+  "name": "decimal.js",
+  "version": "10.4.2",
+  "installedAt": "2026-04-27T01:18:39.196Z",
+  "registry": "http://localhost:4873",
+  "description": "An arbitrary-precision Decimal type for JavaScript.",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

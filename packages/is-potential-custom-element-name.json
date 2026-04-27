@@ -1,0 +1,11 @@
+{
+  "name": "is-potential-custom-element-name",
+  "version": "1.0.1",
+  "installedAt": "2026-04-27T01:18:39.282Z",
+  "registry": "http://localhost:4873",
+  "description": "Check whether a given string matches the `PotentialCustomElementName` production as defined in the HTML Standard.",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

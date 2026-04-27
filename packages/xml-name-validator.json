@@ -1,0 +1,11 @@
+{
+  "name": "xml-name-validator",
+  "version": "4.0.0",
+  "installedAt": "2026-04-27T01:18:39.277Z",
+  "registry": "http://localhost:4873",
+  "description": "Validates whether a string matches the production for an XML name or qualified name",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

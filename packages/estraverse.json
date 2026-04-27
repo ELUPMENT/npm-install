@@ -1,0 +1,11 @@
+{
+  "name": "estraverse",
+  "version": "5.2.0",
+  "installedAt": "2026-04-27T01:18:39.127Z",
+  "registry": "http://localhost:4873",
+  "description": "ECMAScript JS AST traversal functions",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

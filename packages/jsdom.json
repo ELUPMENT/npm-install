@@ -1,0 +1,11 @@
+{
+  "name": "jsdom",
+  "version": "21.1.0",
+  "description": "A JavaScript implementation of many web standards",
+  "license": "MIT",
+  "author": "",
+  "repository": "jsdom/jsdom",
+  "homepage": "",
+  "installedAt": "2026-04-27T06:05:42.185Z",
+  "source": "batch-download"
+}

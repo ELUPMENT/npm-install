@@ -1,0 +1,13 @@
+{
+  "name": "jackspeak",
+  "version": "4.2.3",
+  "installedAt": "2026-04-27T02:17:48.174Z",
+  "registry": "http://localhost:4873",
+  "description": "A very strict and proper argument parser.",
+  "dependencies": {
+    "@isaacs/cliui": "^9.0.0"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 3
+}

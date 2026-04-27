@@ -1,0 +1,11 @@
+{
+  "name": "webidl-conversions",
+  "version": "7.0.0",
+  "installedAt": "2026-04-27T01:18:39.120Z",
+  "registry": "http://localhost:4873",
+  "description": "Implements the WebIDL algorithms for converting to and from JavaScript values",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 3
+}

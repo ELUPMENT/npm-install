@@ -1,0 +1,14 @@
+{
+  "name": "whatwg-url",
+  "version": "11.0.0",
+  "installedAt": "2026-04-27T01:18:39.115Z",
+  "registry": "http://localhost:4873",
+  "description": "An implementation of the WHATWG URL Standard's URL API and parsing machinery",
+  "dependencies": {
+    "tr46": "^3.0.0",
+    "webidl-conversions": "^7.0.0"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

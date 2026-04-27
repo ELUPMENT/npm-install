@@ -1,0 +1,11 @@
+{
+  "name": "requires-port",
+  "version": "1.0.0",
+  "installedAt": "2026-04-27T01:18:39.240Z",
+  "registry": "http://localhost:4873",
+  "description": "Check if a protocol requires a certain port number to be added to an URL.",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 3
+}

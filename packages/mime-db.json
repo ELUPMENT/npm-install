@@ -1,0 +1,11 @@
+{
+  "name": "mime-db",
+  "version": "1.24.0",
+  "installedAt": "2026-04-27T01:18:39.190Z",
+  "registry": "http://localhost:4873",
+  "description": "Media Type Database",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 3
+}

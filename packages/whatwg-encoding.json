@@ -1,0 +1,13 @@
+{
+  "name": "whatwg-encoding",
+  "version": "2.0.0",
+  "installedAt": "2026-04-27T01:18:39.257Z",
+  "registry": "http://localhost:4873",
+  "description": "Decode strings according to the WHATWG Encoding Standard",
+  "dependencies": {
+    "iconv-lite": "0.6.3"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

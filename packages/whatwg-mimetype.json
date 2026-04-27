@@ -1,0 +1,11 @@
+{
+  "name": "whatwg-mimetype",
+  "version": "3.0.0",
+  "installedAt": "2026-04-27T01:18:39.122Z",
+  "registry": "http://localhost:4873",
+  "description": "Parses, serializes, and manipulates MIME types, according to the WHATWG MIME Sniffing Standard",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

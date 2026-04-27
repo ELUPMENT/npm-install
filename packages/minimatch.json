@@ -1,0 +1,13 @@
+{
+  "name": "minimatch",
+  "version": "3.1.2",
+  "installedAt": "2026-04-27T07:13:53.541Z",
+  "registry": "http://localhost:4873",
+  "description": "a glob matcher in javascript",
+  "dependencies": {
+    "brace-expansion": "^1.1.7"
+  },
+  "peerDependencies": {},
+  "isTransitive": false,
+  "depth": 0
+}

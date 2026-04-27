@@ -1,0 +1,11 @@
+{
+  "name": "balanced-match",
+  "version": "0.4.1",
+  "installedAt": "2026-04-27T07:13:53.556Z",
+  "registry": "http://localhost:4873",
+  "description": "Match balanced character pairs, like \"{\" and \"}\"",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

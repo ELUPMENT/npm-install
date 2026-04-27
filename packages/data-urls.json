@@ -1,0 +1,15 @@
+{
+  "name": "data-urls",
+  "version": "3.0.2",
+  "installedAt": "2026-04-27T01:18:39.113Z",
+  "registry": "http://localhost:4873",
+  "description": "Parses data: URLs",
+  "dependencies": {
+    "abab": "^2.0.6",
+    "whatwg-url": "^11.0.0",
+    "whatwg-mimetype": "^3.0.0"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

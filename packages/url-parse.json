@@ -1,0 +1,14 @@
+{
+  "name": "url-parse",
+  "version": "1.5.3",
+  "installedAt": "2026-04-27T01:18:39.234Z",
+  "registry": "http://localhost:4873",
+  "description": "Small footprint URL parser that works seamlessly across Node.js and browser environments",
+  "dependencies": {
+    "querystringify": "^2.1.1",
+    "requires-port": "^1.0.0"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

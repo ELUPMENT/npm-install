@@ -1,0 +1,15 @@
+{
+  "name": "@vue/compiler-sfc",
+  "version": "3.5.0",
+  "description": "@vue/compiler-sfc",
+  "license": "MIT",
+  "author": "Evan You",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuejs/core.git",
+    "directory": "packages/compiler-sfc"
+  },
+  "homepage": "https://github.com/vuejs/core/tree/main/packages/compiler-sfc#readme",
+  "installedAt": "2026-04-27T06:04:59.813Z",
+  "source": "batch-download"
+}

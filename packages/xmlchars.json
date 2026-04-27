@@ -1,0 +1,11 @@
+{
+  "name": "xmlchars",
+  "version": "2.2.0",
+  "installedAt": "2026-04-27T01:18:39.097Z",
+  "registry": "http://localhost:4873",
+  "description": "Utilities for determining if characters belong to character classes defined by the XML specs.",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

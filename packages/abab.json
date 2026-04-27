@@ -1,0 +1,11 @@
+{
+  "name": "abab",
+  "version": "2.0.6",
+  "installedAt": "2026-04-27T01:18:39.083Z",
+  "registry": "http://localhost:4873",
+  "description": "WHATWG spec-compliant implementations of window.atob and window.btoa.",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

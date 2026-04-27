@@ -1,0 +1,13 @@
+{
+  "name": "type-check",
+  "version": "0.3.2",
+  "installedAt": "2026-04-27T01:18:39.170Z",
+  "registry": "http://localhost:4873",
+  "description": "type-check allows you to check the types of JavaScript values at runtime with a Haskell like type syntax.",
+  "dependencies": {
+    "prelude-ls": "~1.1.2"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 3
+}

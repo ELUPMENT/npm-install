@@ -1,0 +1,11 @@
+{
+  "name": "esprima",
+  "version": "4.0.1",
+  "installedAt": "2026-04-27T01:18:39.132Z",
+  "registry": "http://localhost:4873",
+  "description": "ECMAScript parsing infrastructure for multipurpose analysis",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

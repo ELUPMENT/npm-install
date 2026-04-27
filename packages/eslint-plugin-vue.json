@@ -1,0 +1,14 @@
+{
+  "name": "eslint-plugin-vue",
+  "version": "9.14.1",
+  "description": "Official ESLint plugin for Vue.js",
+  "license": "MIT",
+  "author": "Toru Nagashima (https://github.com/mysticatea)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuejs/eslint-plugin-vue.git"
+  },
+  "homepage": "https://eslint.vuejs.org",
+  "installedAt": "2026-04-27T06:05:10.186Z",
+  "source": "batch-download"
+}

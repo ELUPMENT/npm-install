@@ -1,0 +1,13 @@
+{
+  "name": "combined-stream",
+  "version": "1.0.8",
+  "installedAt": "2026-04-27T01:18:39.192Z",
+  "registry": "http://localhost:4873",
+  "description": "A stream that emits multiple other streams one after another.",
+  "dependencies": {
+    "delayed-stream": "~1.0.0"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

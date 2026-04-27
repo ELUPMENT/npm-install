@@ -1,0 +1,13 @@
+{
+  "name": "html-encoding-sniffer",
+  "version": "3.0.0",
+  "installedAt": "2026-04-27T01:18:39.279Z",
+  "registry": "http://localhost:4873",
+  "description": "Sniff the encoding from a HTML byte stream",
+  "dependencies": {
+    "whatwg-encoding": "^2.0.0"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

@@ -1,0 +1,13 @@
+{
+  "name": "parse5",
+  "version": "7.1.1",
+  "installedAt": "2026-04-27T01:18:39.101Z",
+  "registry": "http://localhost:4873",
+  "description": "HTML parser and serializer.",
+  "dependencies": {
+    "entities": "^4.4.0"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

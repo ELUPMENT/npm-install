@@ -1,0 +1,15 @@
+{
+  "name": "@element-plus/icons-vue",
+  "version": "2.3.1",
+  "description": "Vue components of Element Plus Icons collection.",
+  "license": "MIT",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/element-plus/element-plus-icons.git",
+    "directory": "packages/vue"
+  },
+  "homepage": "https://element-plus.org/",
+  "installedAt": "2026-04-27T06:04:14.057Z",
+  "source": "batch-download"
+}

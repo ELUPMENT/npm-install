@@ -1,0 +1,46 @@
+# Verdaccio 配置文件
+
+storage: ./storage
+plugins: ./plugins
+
+uplinks:
+  npmjs:
+    url: https://registry.npmjs.org/
+    timeout: 30s
+    max_fails: 1000        # 增加失败容忍度
+    fail_timeout: 30m      # 延长失败超时时间
+
+packages:
+  '@*/*':
+    access: $all
+    publish: $authenticated
+    unpublish: $authenticated
+    # proxy: npmjs  # ← 注释掉：不从上游获取，避免 E503
+
+  '**':
+    access: $all
+    publish: $authenticated
+    unpublish: $authenticated
+    # proxy: npmjs  # ← 注释掉：不从上游获取，避免 E503
+
+server:
+  keepAliveTimeout: 60
+  headers:
+    X-Powered-By: Verdaccio
+    Strict-Transport-Security: max-age=31536000; includeSubDomains
+
+middlewares:
+  audit:
+    enabled: true
+
+auth:
+  htpasswd:
+    file: ./htpasswd
+    max_users: 1000
+
+logs:
+  type: stdout
+  format: pretty
+  level: http
+
+max_body_size: 100mb

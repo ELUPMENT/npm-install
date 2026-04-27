@@ -1,0 +1,11 @@
+{
+  "name": "esutils",
+  "version": "2.0.2",
+  "installedAt": "2026-04-27T01:18:39.129Z",
+  "registry": "http://localhost:4873",
+  "description": "utility box for ECMAScript language tools",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

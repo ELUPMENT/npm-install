@@ -1,0 +1,11 @@
+{
+  "name": "universalify",
+  "version": "0.2.0",
+  "installedAt": "2026-04-27T01:18:39.243Z",
+  "registry": "http://localhost:4873",
+  "description": "Make a callback- or promise-based function support both promises and callbacks.",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

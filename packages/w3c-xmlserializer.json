@@ -1,0 +1,13 @@
+{
+  "name": "w3c-xmlserializer",
+  "version": "4.0.0",
+  "installedAt": "2026-04-27T01:18:39.275Z",
+  "registry": "http://localhost:4873",
+  "description": "A per-spec XML serializer implementation",
+  "dependencies": {
+    "xml-name-validator": "^4.0.0"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

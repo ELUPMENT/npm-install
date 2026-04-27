@@ -1,0 +1,88 @@
+# ============================================
+# NPM 离线包管理项目 - Git 忽略配置
+# ============================================
+
+# --- 依赖相关文件（核心忽略项）---
+# node_modules 目录（所有依赖包）
+node_modules/
+
+# 离线包文件夹（体积大，可通过脚本重新生成）
+offline-packages/
+
+# npm 缓存文件
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- 锁定文件（根据团队策略选择是否忽略）---
+# package-lock.json - 如果希望每次安装都重新解析依赖，可以取消注释
+# package-lock.json
+
+# --- Verdaccio 相关 ---
+# Verdaccio 存储的包数据（体积巨大）
+verdaccio/storage/
+
+# Verdaccio 日志
+verdaccio/logs/
+
+# --- 临时文件和日志 ---
+# 同步日志（包含本地路径信息）
+sync-log.json
+
+# 临时文件
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# --- IDE 和编辑器 ---
+# VS Code
+.vscode/
+*.code-workspace
+
+# WebStorm/IntelliJ IDEA
+.idea/
+*.iml
+
+# --- 操作系统文件 ---
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+.directory
+
+# --- 构建输出 ---
+dist/
+build/
+*.tgz
+*.tar.gz
+
+# --- 文档生成文件（可选）---
+# 如果 docs/ 是自动生成的，可以取消注释
+# docs/
+
+# --- 测试覆盖率 ---
+coverage/
+.nyc_output/
+
+# --- 环境变量 ---
+.env
+.env.local
+.env.*.local
+
+# --- TypeScript ---
+*.tsbuildinfo
+
+# --- 其他 ---
+# 验证脚本（临时工具脚本）
+verify-sync.js

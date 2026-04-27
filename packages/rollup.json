@@ -1,0 +1,14 @@
+{
+  "name": "rollup",
+  "version": "4.60.2",
+  "description": "Next-generation ES module bundler",
+  "license": "MIT",
+  "author": "Rich Harris",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rollup/rollup.git"
+  },
+  "homepage": "https://rollupjs.org/",
+  "installedAt": "2026-04-27T06:04:02.339Z",
+  "source": "batch-download"
+}

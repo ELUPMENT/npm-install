@@ -1,0 +1,17 @@
+{
+  "name": "@vue/test-utils",
+  "version": "2.4.0",
+  "description": "",
+  "license": "MIT",
+  "author": {
+    "name": "Lachlan Miller",
+    "email": "lachlan.miller.1990@outlook.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuejs/test-utils.git"
+  },
+  "homepage": "https://github.com/vuejs/test-utils",
+  "installedAt": "2026-04-27T06:05:36.958Z",
+  "source": "batch-download"
+}

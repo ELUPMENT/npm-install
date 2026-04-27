@@ -1,0 +1,11 @@
+{
+  "name": "psl",
+  "version": "1.1.33",
+  "installedAt": "2026-04-27T01:18:39.205Z",
+  "registry": "http://localhost:4873",
+  "description": "Domain name parser based on the Public Suffix List",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

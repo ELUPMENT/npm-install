@@ -1,0 +1,16 @@
+{
+  "name": "tough-cookie",
+  "version": "4.1.2",
+  "installedAt": "2026-04-27T01:18:39.203Z",
+  "registry": "http://localhost:4873",
+  "description": "RFC6265 Cookies and Cookie Jar for node.js",
+  "dependencies": {
+    "psl": "^1.1.33",
+    "punycode": "^2.1.1",
+    "url-parse": "^1.5.3",
+    "universalify": "^0.2.0"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

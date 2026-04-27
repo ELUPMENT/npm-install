@@ -1,0 +1,10 @@
+{
+  "name": "agent-base",
+  "installedAt": "2026-04-27T01:18:39.268Z",
+  "registry": "http://localhost:4873",
+  "description": "",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@tootallnate/once",
+  "version": "2.0.0",
+  "installedAt": "2026-04-27T01:18:39.270Z",
+  "registry": "http://localhost:4873",
+  "description": "Creates a Promise that waits for a single event",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

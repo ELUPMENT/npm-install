@@ -1,0 +1,11 @@
+{
+  "name": "concat-map",
+  "version": "0.0.1",
+  "installedAt": "2026-04-27T07:13:53.549Z",
+  "registry": "http://localhost:4873",
+  "description": "concatenative mapdashery",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

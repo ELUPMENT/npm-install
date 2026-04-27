@@ -1,0 +1,645 @@
+{
+  "publishTime": "2026-04-27T10:33:07.446Z",
+  "targetRegistry": "http://10.1.11.113:7000",
+  "totalPackages": 107,
+  "successCount": 0,
+  "failCount": 106,
+  "results": [
+    {
+      "name": "abab",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\abab\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:28:48.930Z"
+    },
+    {
+      "name": "acorn",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\acorn\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:28:50.807Z"
+    },
+    {
+      "name": "acorn-globals",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\acorn-globals\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:28:52.949Z"
+    },
+    {
+      "name": "acorn-walk",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\acorn-walk\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:28:54.799Z"
+    },
+    {
+      "name": "agent-base",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\agent-base\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:28:59.028Z"
+    },
+    {
+      "name": "asynckit",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\asynckit\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:00.986Z"
+    },
+    {
+      "name": "at_element-plus_icons-vue",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\at_element-plus_icons-vue\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:04.797Z"
+    },
+    {
+      "name": "at_tootallnate_once",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\at_tootallnate_once\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:08.247Z"
+    },
+    {
+      "name": "at_types_node",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\at_types_node\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:11.271Z"
+    },
+    {
+      "name": "at_typescript-eslint_eslint-plugin",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\at_typescript-eslint_eslint-plugin\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:14.133Z"
+    },
+    {
+      "name": "at_typescript-eslint_parser",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\at_typescript-eslint_parser\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:15.916Z"
+    },
+    {
+      "name": "at_vitejs_plugin-vue",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\at_vitejs_plugin-vue\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:17.778Z"
+    },
+    {
+      "name": "at_vue_compiler-sfc",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\at_vue_compiler-sfc\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:19.756Z"
+    },
+    {
+      "name": "at_vue_test-utils",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\at_vue_test-utils\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:25.280Z"
+    },
+    {
+      "name": "balanced-match",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\balanced-match\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:27.102Z"
+    },
+    {
+      "name": "balanced-match@0.4.1",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\balanced-match@0.4.1\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:28.863Z"
+    },
+    {
+      "name": "balanced-match@1.0.2",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\balanced-match@1.0.2\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:30.919Z"
+    },
+    {
+      "name": "balanced-match@4.0.4",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\balanced-match@4.0.4\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:33.221Z"
+    },
+    {
+      "name": "brace-expansion",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\brace-expansion\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:35.349Z"
+    },
+    {
+      "name": "brace-expansion@1.1.14",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\brace-expansion@1.1.14\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:37.091Z"
+    },
+    {
+      "name": "brace-expansion@2.1.0",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\brace-expansion@2.1.0\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:38.885Z"
+    },
+    {
+      "name": "brace-expansion@5.0.5",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\brace-expansion@5.0.5\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:41.215Z"
+    },
+    {
+      "name": "combined-stream",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\combined-stream\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:43.270Z"
+    },
+    {
+      "name": "concat-map",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\concat-map\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:45.900Z"
+    },
+    {
+      "name": "cssom",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\cssom\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:48.123Z"
+    },
+    {
+      "name": "cssom@0.3.8",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\cssom@0.3.8\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:50.046Z"
+    },
+    {
+      "name": "cssom@0.5.0",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\cssom@0.5.0\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:52.009Z"
+    },
+    {
+      "name": "cssstyle",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\cssstyle\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:29:55.983Z"
+    },
+    {
+      "name": "data-urls",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\data-urls\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:02.941Z"
+    },
+    {
+      "name": "debug",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\debug\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:05.873Z"
+    },
+    {
+      "name": "debug@2.6.9",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\debug@2.6.9\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:08.023Z"
+    },
+    {
+      "name": "debug@4.3.7",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\debug@4.3.7\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:10.006Z"
+    },
+    {
+      "name": "debug@4.4.3",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\debug@4.4.3\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:12.174Z"
+    },
+    {
+      "name": "decimal.js",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\decimal.js\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:14.235Z"
+    },
+    {
+      "name": "deep-is",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\deep-is\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:16.174Z"
+    },
+    {
+      "name": "delayed-stream",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\delayed-stream\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:18.922Z"
+    },
+    {
+      "name": "domexception",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\domexception\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:21.115Z"
+    },
+    {
+      "name": "element-plus",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\element-plus\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:38.671Z"
+    },
+    {
+      "name": "entities",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\entities\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:40.558Z"
+    },
+    {
+      "name": "entities@6.0.1",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\entities@6.0.1\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:42.400Z"
+    },
+    {
+      "name": "entities@7.0.1",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\entities@7.0.1\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:44.153Z"
+    },
+    {
+      "name": "escodegen",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\escodegen\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:45.899Z"
+    },
+    {
+      "name": "eslint-plugin-vue",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\eslint-plugin-vue\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:48.299Z"
+    },
+    {
+      "name": "esprima",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\esprima\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:50.124Z"
+    },
+    {
+      "name": "estraverse",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\estraverse\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:51.905Z"
+    },
+    {
+      "name": "esutils",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\esutils\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:54.023Z"
+    },
+    {
+      "name": "fast-levenshtein",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\fast-levenshtein\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:55.835Z"
+    },
+    {
+      "name": "form-data",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\form-data\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:30:58.288Z"
+    },
+    {
+      "name": "html-encoding-sniffer",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\html-encoding-sniffer\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:00.118Z"
+    },
+    {
+      "name": "http-proxy-agent",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\http-proxy-agent\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:02.869Z"
+    },
+    {
+      "name": "https-proxy-agent",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\https-proxy-agent\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:05.690Z"
+    },
+    {
+      "name": "iconv-lite",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\iconv-lite\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:08.769Z"
+    },
+    {
+      "name": "iconv-lite@0.4.24",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\iconv-lite@0.4.24\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:10.957Z"
+    },
+    {
+      "name": "iconv-lite@0.6.3",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\iconv-lite@0.6.3\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:12.896Z"
+    },
+    {
+      "name": "is-potential-custom-element-name",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\is-potential-custom-element-name\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:14.670Z"
+    },
+    {
+      "name": "jackspeak",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\jackspeak\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:16.867Z"
+    },
+    {
+      "name": "jsdom",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\jsdom\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:18.723Z"
+    },
+    {
+      "name": "levn",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\levn\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:20.483Z"
+    },
+    {
+      "name": "mime-db",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\mime-db\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:22.704Z"
+    },
+    {
+      "name": "mime-types",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\mime-types\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:24.557Z"
+    },
+    {
+      "name": "minimatch",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\minimatch\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:26.441Z"
+    },
+    {
+      "name": "minimatch@10.2.5",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\minimatch@10.2.5\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:28.273Z"
+    },
+    {
+      "name": "minimatch@3.1.5",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\minimatch@3.1.5\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:30.028Z"
+    },
+    {
+      "name": "minimatch@5.1.9",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\minimatch@5.1.9\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:32.177Z"
+    },
+    {
+      "name": "nwsapi",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\nwsapi\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:33.921Z"
+    },
+    {
+      "name": "optionator",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\optionator\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:35.729Z"
+    },
+    {
+      "name": "parse5",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\parse5\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:37.908Z"
+    },
+    {
+      "name": "prelude-ls",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\prelude-ls\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:39.748Z"
+    },
+    {
+      "name": "prismjs",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\prismjs\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:42.289Z"
+    },
+    {
+      "name": "psl",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\psl\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:44.171Z"
+    },
+    {
+      "name": "punycode",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\punycode\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:46.003Z"
+    },
+    {
+      "name": "querystringify",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\querystringify\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:47.682Z"
+    },
+    {
+      "name": "requires-port",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\requires-port\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:49.488Z"
+    },
+    {
+      "name": "rollup",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\rollup\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:51.387Z"
+    },
+    {
+      "name": "rollup@2.80.0",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\rollup@2.80.0\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:53.221Z"
+    },
+    {
+      "name": "rollup@4.60.2",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\rollup@4.60.2\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:55.152Z"
+    },
+    {
+      "name": "saxes",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\saxes\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:56.905Z"
+    },
+    {
+      "name": "source-map",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\source-map\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:31:59.019Z"
+    },
+    {
+      "name": "symbol-tree",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\symbol-tree\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:00.842Z"
+    },
+    {
+      "name": "tough-cookie",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\tough-cookie\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:02.715Z"
+    },
+    {
+      "name": "tr46",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\tr46\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:05.382Z"
+    },
+    {
+      "name": "tr46@0.0.3",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\tr46@0.0.3\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:08.321Z"
+    },
+    {
+      "name": "tr46@3.0.0",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\tr46@3.0.0\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:10.887Z"
+    },
+    {
+      "name": "type-check",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\type-check\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:17.224Z"
+    },
+    {
+      "name": "universalify",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\universalify\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:21.557Z"
+    },
+    {
+      "name": "universalify@0.2.0",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\universalify@0.2.0\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:24.755Z"
+    },
+    {
+      "name": "universalify@2.0.1",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\universalify@2.0.1\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:28.274Z"
+    },
+    {
+      "name": "url-parse",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\url-parse\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:33.147Z"
+    },
+    {
+      "name": "vite",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\vite\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:35.522Z"
+    },
+    {
+      "name": "vite@3.2.11",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\vite@3.2.11\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:37.654Z"
+    },
+    {
+      "name": "vite@5.4.21",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\vite@5.4.21\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:39.735Z"
+    },
+    {
+      "name": "vitest",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\vitest\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:41.874Z"
+    },
+    {
+      "name": "vue-router",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\vue-router\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:43.740Z"
+    },
+    {
+      "name": "w3c-xmlserializer",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\w3c-xmlserializer\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:45.504Z"
+    },
+    {
+      "name": "webidl-conversions",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\webidl-conversions\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:47.240Z"
+    },
+    {
+      "name": "webidl-conversions@3.0.1",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\webidl-conversions@3.0.1\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:49.079Z"
+    },
+    {
+      "name": "webidl-conversions@7.0.0",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\webidl-conversions@7.0.0\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:50.783Z"
+    },
+    {
+      "name": "whatwg-encoding",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\whatwg-encoding\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:52.617Z"
+    },
+    {
+      "name": "whatwg-mimetype",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\whatwg-mimetype\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:54.457Z"
+    },
+    {
+      "name": "whatwg-url",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\whatwg-url\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:56.270Z"
+    },
+    {
+      "name": "whatwg-url@11.0.0",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\whatwg-url@11.0.0\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:58.115Z"
+    },
+    {
+      "name": "whatwg-url@5.0.0",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\whatwg-url@5.0.0\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:32:59.853Z"
+    },
+    {
+      "name": "wordwrap",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\wordwrap\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:33:01.636Z"
+    },
+    {
+      "name": "ws",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\ws\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:33:03.487Z"
+    },
+    {
+      "name": "xml-name-validator",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\xml-name-validator\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:33:05.382Z"
+    },
+    {
+      "name": "xmlchars",
+      "status": "failed",
+      "error": "Command failed: cd /d \"C:\\Users\\Administrator\\Desktop\\components\\npm-install\\offline-packages\\xmlchars\" && npm publish --registry http://10.1.11.113:7000 --offline",
+      "publishTime": "2026-04-27T10:33:07.446Z"
+    }
+  ]
+}

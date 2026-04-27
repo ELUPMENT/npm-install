@@ -1,0 +1,107 @@
+{
+  "timestamp": "2026-04-27T06:06:41.927Z",
+  "totalPackages": 19,
+  "successCount": 16,
+  "failCount": 3,
+  "syncedCount": 16,
+  "results": [
+    {
+      "name": "@types/node",
+      "version": "25.6.0",
+      "success": true
+    },
+    {
+      "name": "nwsapi",
+      "version": "2.2.23",
+      "success": true
+    },
+    {
+      "name": "rollup",
+      "version": "4.60.2",
+      "success": true
+    },
+    {
+      "name": "@element-plus/icons-vue",
+      "version": "2.3.1",
+      "success": true
+    },
+    {
+      "name": "element-plus",
+      "version": "2.13.0",
+      "success": true
+    },
+    {
+      "name": "prismjs",
+      "version": "1.30.0",
+      "success": true
+    },
+    {
+      "name": "vue",
+      "version": "^3.4.0",
+      "success": false,
+      "error": "命令执行失败: npm install vue@3.4.0 --registry=http://localhost:4873 --no-save --legacy-peer-deps\nCommand failed: cmd /c \"npm install vue@3.4.0 --registry=http://localhost:4873 --no-save --legacy-peer-deps\"\nnpm error code E404\nnpm error 404 Not Found - GET http://localhost:4873/@vue%2fruntime-core - no such package available\nnpm error 404\nnpm error 404  '@vue/runtime-core@3.4.0' is not in this registry.\nnpm error 404\nnpm error 404 Note that you can also install from a\nnpm error 404 tarball, folder, http url, or git url.\nnpm error A complete log of this run can be found in: C:\\Users\\Administrator\\AppData\\Local\\npm-cache\\_logs\\2026-04-27T06_04_27_020Z-debug-0.log\n"
+    },
+    {
+      "name": "vue-router",
+      "version": "4.6.4",
+      "success": true
+    },
+    {
+      "name": "@typescript-eslint/eslint-plugin",
+      "version": "8.57.1",
+      "success": true
+    },
+    {
+      "name": "@typescript-eslint/parser",
+      "version": "8.57.1",
+      "success": true
+    },
+    {
+      "name": "@vitejs/plugin-vue",
+      "version": "5.0.0",
+      "success": true
+    },
+    {
+      "name": "@vue/compiler-sfc",
+      "version": "3.5.0",
+      "success": true
+    },
+    {
+      "name": "eslint",
+      "version": "^8.57.0",
+      "success": false,
+      "error": "命令执行失败: npm install eslint@8.57.0 --registry=http://localhost:4873 --no-save --legacy-peer-deps\nCommand failed: cmd /c \"npm install eslint@8.57.0 --registry=http://localhost:4873 --no-save --legacy-peer-deps\"\nnpm error code E404\nnpm error 404 Not Found - GET http://localhost:4873/@humanwhocodes%2fobject-schema - no such package available\nnpm error 404\nnpm error 404  '@humanwhocodes/object-schema@^2.0.2' is not in this registry.\nnpm error 404\nnpm error 404 Note that you can also install from a\nnpm error 404 tarball, folder, http url, or git url.\nnpm error A complete log of this run can be found in: C:\\Users\\Administrator\\AppData\\Local\\npm-cache\\_logs\\2026-04-27T06_05_00_506Z-debug-0.log\n"
+    },
+    {
+      "name": "eslint-plugin-vue",
+      "version": "9.14.1",
+      "success": true
+    },
+    {
+      "name": "typescript",
+      "version": "^5.4.0",
+      "success": false,
+      "error": "命令执行失败: npm install typescript@5.4.0 --registry=http://localhost:4873 --no-save --legacy-peer-deps\nCommand failed: cmd /c \"npm install typescript@5.4.0 --registry=http://localhost:4873 --no-save --legacy-peer-deps\"\nnpm error code ETARGET\nnpm error notarget No matching version found for typescript@5.4.0.\nnpm error notarget In most cases you or one of your dependencies are requesting\nnpm error notarget a package version that doesn't exist.\nnpm error A complete log of this run can be found in: C:\\Users\\Administrator\\AppData\\Local\\npm-cache\\_logs\\2026-04-27T06_05_10_746Z-debug-0.log\n"
+    },
+    {
+      "name": "vite",
+      "version": "5.4.0",
+      "success": true
+    },
+    {
+      "name": "@vue/test-utils",
+      "version": "2.4.0",
+      "success": true
+    },
+    {
+      "name": "jsdom",
+      "version": "21.1.0",
+      "success": true
+    },
+    {
+      "name": "vitest",
+      "version": "0.25.0",
+      "success": true
+    }
+  ]
+}

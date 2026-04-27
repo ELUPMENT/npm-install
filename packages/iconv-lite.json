@@ -1,0 +1,13 @@
+{
+  "name": "iconv-lite",
+  "version": "0.6.3",
+  "installedAt": "2026-04-27T01:18:39.260Z",
+  "registry": "http://localhost:4873",
+  "description": "Convert character encodings in pure javascript.",
+  "dependencies": {
+    "safer-buffer": ">= 2.1.2 < 3.0.0"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

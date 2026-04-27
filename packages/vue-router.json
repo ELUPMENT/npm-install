@@ -1,0 +1,17 @@
+{
+  "name": "vue-router",
+  "version": "4.6.4",
+  "description": "",
+  "license": "MIT",
+  "author": {
+    "name": "Eduardo San Martin Morote",
+    "email": "posva13@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuejs/router.git"
+  },
+  "homepage": "https://router.vuejs.org",
+  "installedAt": "2026-04-27T06:04:34.016Z",
+  "source": "batch-download"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "cssstyle",
+  "version": "2.3.0",
+  "installedAt": "2026-04-27T01:18:39.108Z",
+  "registry": "http://localhost:4873",
+  "description": "CSSStyleDeclaration Object Model implementation",
+  "dependencies": {
+    "cssom": "~0.3.6"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

@@ -1,0 +1,11 @@
+{
+  "name": "prelude-ls",
+  "version": "1.1.2",
+  "installedAt": "2026-04-27T01:18:39.138Z",
+  "registry": "http://localhost:4873",
+  "description": "prelude.ls is a functionally oriented utility library. It is powerful and flexible. Almost all of its functions are curried. It is written in, and is the recommended base library for, LiveScript.",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 3
+}

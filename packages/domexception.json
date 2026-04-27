@@ -1,0 +1,13 @@
+{
+  "name": "domexception",
+  "version": "4.0.0",
+  "installedAt": "2026-04-27T01:18:39.200Z",
+  "registry": "http://localhost:4873",
+  "description": "An implementation of the DOMException class from browsers",
+  "dependencies": {
+    "webidl-conversions": "^7.0.0"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

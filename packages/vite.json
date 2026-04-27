@@ -1,0 +1,15 @@
+{
+  "name": "vite",
+  "version": "5.4.0",
+  "description": "Native-ESM powered web dev build tool",
+  "license": "MIT",
+  "author": "Evan You",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitejs/vite.git",
+    "directory": "packages/vite"
+  },
+  "homepage": "https://vitejs.dev",
+  "installedAt": "2026-04-27T06:05:30.906Z",
+  "source": "batch-download"
+}

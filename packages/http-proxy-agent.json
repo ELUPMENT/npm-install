@@ -1,0 +1,15 @@
+{
+  "name": "http-proxy-agent",
+  "version": "5.0.0",
+  "installedAt": "2026-04-27T01:18:39.263Z",
+  "registry": "http://localhost:4873",
+  "description": "An HTTP(s) proxy `http.Agent` implementation for HTTP",
+  "dependencies": {
+    "debug": "4",
+    "agent-base": "6",
+    "@tootallnate/once": "2"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

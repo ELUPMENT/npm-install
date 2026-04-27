@@ -1,0 +1,13 @@
+{
+  "name": "mime-types",
+  "version": "2.1.12",
+  "installedAt": "2026-04-27T01:18:39.187Z",
+  "registry": "http://localhost:4873",
+  "description": "The ultimate javascript content-type utility.",
+  "dependencies": {
+    "mime-db": "~1.24.0"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

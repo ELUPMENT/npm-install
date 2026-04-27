@@ -1,0 +1,15 @@
+{
+  "name": "form-data",
+  "version": "4.0.0",
+  "installedAt": "2026-04-27T01:18:39.182Z",
+  "registry": "http://localhost:4873",
+  "description": "A library to create readable \"multipart/form-data\" streams. Can be used to submit forms and file uploads to other web applications.",
+  "dependencies": {
+    "asynckit": "^0.4.0",
+    "mime-types": "^2.1.12",
+    "combined-stream": "^1.0.8"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}
