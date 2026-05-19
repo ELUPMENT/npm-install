@@ -6,6 +6,7 @@ const PACKAGES_DIR = path.join(__dirname, '..', 'packages');
 const DOCS_DIR = path.join(__dirname, '..', 'docs');
 const OFFLINE_DIR = path.join(__dirname, '..', 'offline-packages');
 const PACKAGE_JSON_PATH = path.join(__dirname, '..', 'package.json');
+const NODE_MODULES_PATH = path.join(__dirname, '..', 'node_modules');
 
 // Windows 兼容的命令执行函数
 function execCommand(command, options = {}) {
@@ -54,7 +55,7 @@ async function readDependencies() {
     return [];
   }
   
-  console.log(`找到 ${targetDeps.length} 个依赖:\n`);
+  console.log(`找到 ${targetDeps.length} 个主依赖:\n`);
   targetDeps.forEach(([name, version]) => {
     console.log(`  - ${name}@${version}`);
   });
@@ -63,63 +64,122 @@ async function readDependencies() {
   return targetDeps;
 }
 
-// 下载单个包
-async function downloadPackage(name, version) {
-  console.log(`\n[${name}@${version}] 开始下载...`);
+// 【关键改进】使用 npm install 完整解析依赖树
+async function installWithFullDependencies(packageName, version) {
+  console.log(`\n[${packageName}@${version}] 开始安装（包含完整依赖链）...`);
   
   try {
     // 清理版本号前缀（^、~、>= 等）
     const cleanVersion = version.replace(/^[^0-9]*/, '');
     
-    // 安装包，添加 --legacy-peer-deps 避免 peer dependency 冲突
-    const installCmd = `npm install ${name}@${cleanVersion} --registry=http://localhost:4873 --no-save --legacy-peer-deps`;
+    // 【核心改进】使用 npm install 自动解析并安装所有依赖（包括子依赖）
+    // --legacy-peer-deps 避免 peer dependency 冲突
+    // npm 会自动递归下载所有层级的依赖
+    const installCmd = `npm install ${packageName}@${cleanVersion} --registry=http://localhost:4873 --no-save --legacy-peer-deps`;
+    
+    console.log(`  执行命令: ${installCmd}`);
     execCommand(installCmd, { stdio: 'pipe' });
     
-    console.log(`✓ ${name}@${cleanVersion} 下载成功`);
+    console.log(`✓ ${packageName}@${cleanVersion} 及其所有依赖安装成功`);
     
-    // 获取包的完整信息
-    const nodeModulesPath = path.join(__dirname, '..', 'node_modules', name);
-    const packageJsonPath = path.join(nodeModulesPath, 'package.json');
+    // 获取已安装的包的完整依赖树信息
+    const installedPackages = await getInstalledDependencyTree(packageName);
     
-    if (await fs.pathExists(packageJsonPath)) {
-      const packageInfo = await fs.readJson(packageJsonPath);
-      
-      // 保存包信息
-      const safeFileName = name.replace(/\//g, '_').replace(/@/g, 'at_');
-      const infoPath = path.join(PACKAGES_DIR, `${safeFileName}.json`);
-      
-      await fs.writeJson(infoPath, {
-        name: packageInfo.name,
-        version: packageInfo.version,
-        description: packageInfo.description || '',
-        license: packageInfo.license || '',
-        author: packageInfo.author || '',
-        repository: packageInfo.repository || '',
-        homepage: packageInfo.homepage || '',
-        installedAt: new Date().toISOString(),
-        source: 'batch-download'
-      }, { spaces: 2 });
-      
-      console.log(`✓ ${name} 信息已保存`);
-      
-      return {
-        name: packageInfo.name,
-        version: packageInfo.version,
-        success: true
-      };
-    }
-    
-    return { name, version, success: false, error: 'package.json not found' };
+    return {
+      mainPackage: { name: packageName, version: cleanVersion },
+      allDependencies: installedPackages,
+      success: true
+    };
     
   } catch (error) {
-    console.error(`✗ ${name}@${version} 下载失败:`, error.message);
-    return { name, version, success: false, error: error.message };
+    console.error(`✗ ${packageName}@${version} 安装失败:`, error.message);
+    return { 
+      mainPackage: { name: packageName, version },
+      success: false, 
+      error: error.message 
+    };
   }
+}
+
+// 【新增】获取已安装的依赖树
+async function getInstalledDependencyTree(rootPackageName) {
+  const installedPackages = [];
+  const visited = new Set();
+  
+  // 递归扫描 node_modules 中的所有包
+  async function scanPackage(packagePath, depth = 0) {
+    const packageJsonPath = path.join(packagePath, 'package.json');
+    
+    if (!(await fs.pathExists(packageJsonPath))) {
+      return;
+    }
+    
+    const packageJson = await fs.readJson(packageJsonPath);
+    const packageName = packageJson.name;
+    const packageVersion = packageJson.version;
+    const packageKey = `${packageName}@${packageVersion}`;
+    
+    // 避免重复处理
+    if (visited.has(packageKey)) {
+      return;
+    }
+    visited.add(packageKey);
+    
+    // 记录包信息
+    installedPackages.push({
+      name: packageName,
+      version: packageVersion,
+      description: packageJson.description || '',
+      license: packageJson.license || '',
+      depth: depth,
+      isRoot: depth === 0,
+      dependencies: packageJson.dependencies || {},
+      installedAt: new Date().toISOString()
+    });
+    
+    // 递归处理子依赖
+    if (depth < 5) { // 限制深度，避免无限递归
+      const depsPath = path.join(packagePath, 'node_modules');
+      if (await fs.pathExists(depsPath)) {
+        const subPackages = await fs.readdir(depsPath);
+        for (const subPkg of subPackages) {
+          if (!subPkg.startsWith('.')) {
+            await scanPackage(path.join(depsPath, subPkg), depth + 1);
+          }
+        }
+      }
+    }
+  }
+  
+  // 从根包开始扫描
+  const rootPackagePath = path.join(NODE_MODULES_PATH, rootPackageName);
+  if (await fs.pathExists(rootPackagePath)) {
+    await scanPackage(rootPackagePath, 0);
+  }
+  
+  return installedPackages;
+}
+
+// 保存包信息到 packages 目录
+async function savePackageInfo(packageInfo) {
+  const safeFileName = packageInfo.name.replace(/\//g, '_').replace(/@/g, 'at_');
+  const infoPath = path.join(PACKAGES_DIR, `${safeFileName}.json`);
+  
+  await fs.writeJson(infoPath, {
+    name: packageInfo.name,
+    version: packageInfo.version,
+    description: packageInfo.description || '',
+    license: packageInfo.license || '',
+    installedAt: packageInfo.installedAt,
+    source: 'batch-download',
+    isTransitive: !packageInfo.isRoot,
+    depth: packageInfo.depth || 0
+  }, { spaces: 2 });
 }
 
 // 同步包到离线文件夹
 async function syncToOffline(packageName) {
-  const nodeModulesPath = path.join(__dirname, '..', 'node_modules', packageName);
+  const nodeModulesPath = path.join(NODE_MODULES_PATH, packageName);
   const safeFileName = packageName.replace(/\//g, '_').replace(/@/g, 'at_');
   const targetPath = path.join(OFFLINE_DIR, safeFileName);
   
@@ -150,9 +210,9 @@ async function generateDocumentation(packageInfo) {
 - **版本**: ${packageInfo.version}
 - **描述**: ${packageInfo.description || '无'}
 - **许可证**: ${packageInfo.license || '未知'}
-- **作者**: ${typeof packageInfo.author === 'object' ? packageInfo.author.name || packageInfo.author : packageInfo.author || '未知'}
 - **安装时间**: ${new Date(packageInfo.installedAt).toLocaleString('zh-CN')}
-- **来源**: 批量下载
+- **来源**: 批量下载（含完整依赖链）
+- **依赖层级**: ${packageInfo.isRoot ? '主包' : `L${packageInfo.depth} (传递依赖)`}
 
 ${packageInfo.homepage ? `## 主页\n\n[${packageInfo.homepage}](${packageInfo.homepage})\n` : ''}
 ${packageInfo.repository ? `## 仓库\n\n[${typeof packageInfo.repository.url === 'string' ? packageInfo.repository.url : JSON.stringify(packageInfo.repository)}](${typeof packageInfo.repository.url === 'string' ? packageInfo.repository.url.replace('.git', '') : ''})\n` : ''}
@@ -165,7 +225,7 @@ npm install ${packageInfo.name}@${packageInfo.version} --registry=http://localho
 
 ---
 
-*本文档由批量下载工具自动生成*
+*本文档由批量下载工具自动生成，包含完整依赖链*
 `;
   
   await fs.writeFile(docPath, docContent, 'utf8');
@@ -175,7 +235,8 @@ npm install ${packageInfo.name}@${packageInfo.version} --registry=http://localho
 // 主函数
 async function batchDownload() {
   try {
-    console.log('\n=== 批量依赖下载工具 ===\n');
+    console.log('\n=== 批量依赖下载工具（完整版） ===\n');
+    console.log('特性: 自动下载主包及其所有子依赖，形成完整依赖链\n');
     
     // 确保目录存在
     await ensureDirectories();
@@ -195,7 +256,7 @@ async function batchDownload() {
     });
     
     const answer = await new Promise((resolve) => {
-      rl.question(`是否继续下载这 ${dependencies.length} 个依赖? (y/n): `, resolve);
+      rl.question(`是否继续下载这 ${dependencies.length} 个主依赖（将自动下载所有子依赖）? (y/n): `, resolve);
     });
     
     rl.close();
@@ -205,42 +266,62 @@ async function batchDownload() {
       return;
     }
     
-    console.log('\n开始批量下载...\n');
+    console.log('\n开始批量下载（每个包都会下载完整依赖链）...\n');
     
-    // 下载所有依赖
-    const results = [];
-    let successCount = 0;
-    let failCount = 0;
+    // 下载所有主依赖
+    const allResults = [];
+    let totalSuccessCount = 0;
+    let totalFailCount = 0;
+    let allInstalledPackages = new Map(); // 用于去重
     
     for (let i = 0; i < dependencies.length; i++) {
       const [name, version] = dependencies[i];
-      console.log(`\n[${i + 1}/${dependencies.length}] 处理 ${name}@${version}...`);
+      console.log(`\n========== [${i + 1}/${dependencies.length}] 处理主依赖: ${name}@${version} ==========`);
       
-      const result = await downloadPackage(name, version);
-      results.push(result);
+      const result = await installWithFullDependencies(name, version);
+      allResults.push(result);
       
       if (result.success) {
-        successCount++;
+        totalSuccessCount++;
+        
+        // 收集所有安装的包（包括子依赖）
+        result.allDependencies.forEach(pkg => {
+          const key = `${pkg.name}@${pkg.version}`;
+          if (!allInstalledPackages.has(key)) {
+            allInstalledPackages.set(key, pkg);
+          }
+        });
+        
+        console.log(`✓ ${name} 及其 ${result.allDependencies.length - 1} 个子依赖安装完成`);
       } else {
-        failCount++;
+        totalFailCount++;
+        console.error(`✗ ${name} 安装失败`);
       }
     }
     
     console.log('\n\n=== 下载完成 ===');
-    console.log(`总计: ${dependencies.length} 个包`);
-    console.log(`成功: ${successCount} 个`);
-    console.log(`失败: ${failCount} 个\n`);
+    console.log(`主依赖总计: ${dependencies.length} 个`);
+    console.log(`成功: ${totalSuccessCount} 个`);
+    console.log(`失败: ${totalFailCount} 个`);
+    console.log(`所有包（含子依赖）总计: ${allInstalledPackages.size} 个\n`);
+    
+    // 保存所有包的信息
+    console.log('\n=== 保存包信息 ===\n');
+    let savedCount = 0;
+    for (const [key, pkgInfo] of allInstalledPackages) {
+      await savePackageInfo(pkgInfo);
+      savedCount++;
+    }
+    console.log(`✓ 已保存 ${savedCount} 个包的信息`);
     
     // 同步到离线文件夹
     console.log('\n=== 同步到离线文件夹 ===\n');
     
     let syncedCount = 0;
-    for (const result of results) {
-      if (result.success) {
-        const synced = await syncToOffline(result.name);
-        if (synced) {
-          syncedCount++;
-        }
+    for (const [key, pkgInfo] of allInstalledPackages) {
+      const synced = await syncToOffline(pkgInfo.name);
+      if (synced) {
+        syncedCount++;
       }
     }
     
@@ -249,26 +330,29 @@ async function batchDownload() {
     // 生成文档
     console.log('\n=== 生成文档 ===\n');
     
-    const successfulResults = results.filter(r => r.success);
-    for (const result of successfulResults) {
-      const packageInfoPath = path.join(PACKAGES_DIR, `${result.name.replace(/\//g, '_').replace(/@/g, 'at_')}.json`);
-      if (await fs.pathExists(packageInfoPath)) {
-        const packageInfo = await fs.readJson(packageInfoPath);
-        await generateDocumentation(packageInfo);
-      }
+    let docCount = 0;
+    for (const [key, pkgInfo] of allInstalledPackages) {
+      await generateDocumentation(pkgInfo);
+      docCount++;
     }
     
-    console.log(`\n✓ 已生成 ${successfulResults.length} 个包的文档`);
+    console.log(`\n✓ 已生成 ${docCount} 个包的文档`);
     
     // 生成汇总报告
     const reportPath = path.join(__dirname, '..', 'batch-download-report.json');
     const report = {
       timestamp: new Date().toISOString(),
-      totalPackages: dependencies.length,
-      successCount: successCount,
-      failCount: failCount,
+      totalMainPackages: dependencies.length,
+      totalAllPackages: allInstalledPackages.size,
+      successCount: totalSuccessCount,
+      failCount: totalFailCount,
       syncedCount: syncedCount,
-      results: results
+      results: allResults.map(r => ({
+        mainPackage: r.mainPackage,
+        success: r.success,
+        totalDependencies: r.allDependencies ? r.allDependencies.length : 0,
+        error: r.error
+      }))
     };
     
     await fs.writeJson(reportPath, report, { spaces: 2 });
@@ -276,11 +360,11 @@ async function batchDownload() {
     
     console.log('\n=== 批量下载完成 ===\n');
     
-    if (failCount > 0) {
+    if (totalFailCount > 0) {
       console.log('⚠️  部分包下载失败，请检查错误信息');
       console.log('失败的包:');
-      results.filter(r => !r.success).forEach(r => {
-        console.log(`  - ${r.name}@${r.version}: ${r.error}`);
+      allResults.filter(r => !r.success).forEach(r => {
+        console.log(`  - ${r.mainPackage.name}@${r.mainPackage.version}: ${r.error}`);
       });
     }
     

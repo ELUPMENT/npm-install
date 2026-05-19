@@ -18,7 +18,8 @@
     "check-verdaccio": "node scripts/check-verdaccio-status.js",
     "configure-internal": "node scripts/configure-internal-registry.js",
     "check-publish-setup": "node scripts/check-publish-setup.js",
-    "clean-cache": "node scripts/clean-npm-cache.js"
+    "clean-cache": "node scripts/clean-npm-cache.js",
+    "test-safety": "node scripts/test-publish-safety.js"
   },
   "keywords": [
     "verdaccio",
