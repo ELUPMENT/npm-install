@@ -1,11 +1,11 @@
 {
   "name": "entities",
-  "version": "4.4.0",
-  "installedAt": "2026-04-27T01:18:39.105Z",
-  "registry": "http://localhost:4873",
+  "version": "7.0.1",
+  "installedAt": "2026-05-22T07:03:11.704Z",
+  "registry": "https://registry.npmjs.org",
   "description": "Encode & decode XML and HTML entities with ease & speed",
   "dependencies": {},
   "peerDependencies": {},
   "isTransitive": true,
-  "depth": 2
+  "depth": 3
 }

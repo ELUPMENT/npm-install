@@ -13,15 +13,22 @@ uplinks:
 packages:
   '@*/*':
     access: $all
-    publish: $authenticated
+    publish: $all          # 改为 $all，允许匿名发布
     unpublish: $authenticated
     # proxy: npmjs  # ← 注释掉：不从上游获取，避免 E503
 
   '**':
     access: $all
-    publish: $authenticated
+    publish: $all          # 改为 $all，允许匿名发布
     unpublish: $authenticated
-    # proxy: npmjs  # ← 注释掉：不从上游获取，避免 E503
+
+# 允许匿名访问 Web 界面
+web:
+  enable: true
+  title: Verdaccio - 内网 NPM 仓库
+  logo: ''
+  gravatar: false
+  scope: ''
 
 server:
   keepAliveTimeout: 60
@@ -38,7 +45,7 @@ auth:
     file: ./htpasswd
     max_users: 1000
 
-logs:
+log:
   type: stdout
   format: pretty
   level: http

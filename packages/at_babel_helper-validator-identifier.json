@@ -1,0 +1,11 @@
+{
+  "name": "@babel/helper-validator-identifier",
+  "version": "7.28.5",
+  "installedAt": "2026-05-22T01:16:58.199Z",
+  "registry": "http://localhost:4873",
+  "description": "Validate identifier/keywords name",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 3
+}

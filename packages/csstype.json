@@ -1,0 +1,11 @@
+{
+  "name": "csstype",
+  "version": "3.2.3",
+  "installedAt": "2026-05-22T07:03:11.702Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "Strict TypeScript and Flow types for style based on MDN data",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

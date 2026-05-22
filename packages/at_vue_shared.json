@@ -1,0 +1,11 @@
+{
+  "name": "@vue/shared",
+  "version": "3.5.34",
+  "installedAt": "2026-05-22T07:03:11.701Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "internal utils shared across @vue packages",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

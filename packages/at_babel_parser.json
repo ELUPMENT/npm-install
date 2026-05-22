@@ -1,0 +1,13 @@
+{
+  "name": "@babel/parser",
+  "version": "7.29.3",
+  "installedAt": "2026-05-22T07:03:11.705Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "A JavaScript parser",
+  "dependencies": {
+    "@babel/types": "^7.29.0"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 3
+}

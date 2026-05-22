@@ -11,6 +11,7 @@ const rl = readline.createInterface({
 const PACKAGES_DIR = path.join(__dirname, '..', 'packages');
 const DOCS_DIR = path.join(__dirname, '..', 'docs');
 const OFFLINE_DIR = path.join(__dirname, '..', 'offline-packages');
+const PUBLIC_REGISTRY = 'https://registry.npmjs.org';
 
 // 确保目录存在
 async function ensureDirectories() {
@@ -40,10 +41,14 @@ function execCommand(command, options = {}) {
   });
 }
 
-// 添加依赖包
+// 使用公网 npm registry
+function getCurrentRegistry() {
+  return PUBLIC_REGISTRY;
+}
+
 async function addPackage() {
   try {
-    console.log('\n=== 添加新的 npm 依赖包 ===\n');
+    console.log('\n=== 添加 npm 依赖包 ===\n');
     
     const packageName = await askQuestion('请输入包名: ');
     if (!packageName) {
@@ -54,10 +59,14 @@ async function addPackage() {
 
     const version = await askQuestion('请输入版本号 (留空使用最新版本): ') || 'latest';
     
-    console.log(`\n正在下载 ${packageName}@${version}...`);
+    // 使用公网 npm registry 下载依赖
+    const registry = PUBLIC_REGISTRY;
+    console.log(`📦 使用 registry: ${registry}\n`);
+    
+    console.log(`正在下载 ${packageName}@${version}...`);
     
     // 执行 npm install（Windows 兼容），添加 --legacy-peer-deps 避免依赖冲突
-    const installCmd = `npm install ${packageName}@${version} --registry=http://localhost:4873 --legacy-peer-deps`;
+    const installCmd = `npm install ${packageName}@${version} --registry=${registry} --legacy-peer-deps --no-package-lock`;
     execCommand(installCmd);
     
     console.log(`✓ 成功下载 ${packageName}@${version}`);
@@ -67,7 +76,7 @@ async function addPackage() {
       name: packageName,
       version: version,
       installedAt: new Date().toISOString(),
-      registry: 'http://localhost:4873'
+      registry: registry
     };
     
     // Windows 兼容的文件名处理：替换 / 和 @ 符号

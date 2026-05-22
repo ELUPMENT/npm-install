@@ -1,0 +1,19 @@
+{
+  "name": "vue",
+  "version": "3.5.34",
+  "installedAt": "2026-05-22T07:03:11.699Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "The progressive JavaScript framework for building modern web UI.",
+  "dependencies": {
+    "@vue/shared": "3.5.34",
+    "@vue/runtime-dom": "3.5.34",
+    "@vue/compiler-dom": "3.5.34",
+    "@vue/compiler-sfc": "3.5.34",
+    "@vue/server-renderer": "3.5.34"
+  },
+  "peerDependencies": {
+    "typescript": "*"
+  },
+  "isTransitive": false,
+  "depth": 0
+}

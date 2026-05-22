@@ -1,0 +1,13 @@
+{
+  "name": "magic-string",
+  "version": "0.30.21",
+  "installedAt": "2026-05-22T07:03:11.707Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "Modify strings, generate sourcemaps",
+  "dependencies": {
+    "@jridgewell/sourcemap-codec": "^1.5.5"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

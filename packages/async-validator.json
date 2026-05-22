@@ -1,0 +1,11 @@
+{
+  "name": "async-validator",
+  "version": "4.2.5",
+  "installedAt": "2026-05-22T09:13:57.374Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "validate form asynchronous",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": false,
+  "depth": 0
+}

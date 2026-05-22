@@ -7,6 +7,7 @@ const DOCS_DIR = path.join(__dirname, '..', 'docs');
 const OFFLINE_DIR = path.join(__dirname, '..', 'offline-packages');
 const PACKAGE_JSON_PATH = path.join(__dirname, '..', 'package.json');
 const NODE_MODULES_PATH = path.join(__dirname, '..', 'node_modules');
+const PUBLIC_REGISTRY = 'https://registry.npmjs.org';
 
 // Windows 兼容的命令执行函数
 function execCommand(command, options = {}) {
@@ -24,58 +25,25 @@ function execCommand(command, options = {}) {
   }
 }
 
-// 确保目录存在
-async function ensureDirectories() {
-  await fs.ensureDir(PACKAGES_DIR);
-  await fs.ensureDir(DOCS_DIR);
-  await fs.ensureDir(OFFLINE_DIR);
+// 公网 npm registry
+function getCurrentRegistry() {
+  return PUBLIC_REGISTRY;
 }
 
-// 从 package.json 读取依赖
-async function readDependencies() {
-  console.log('📖 读取 package.json 中的依赖...\n');
-  
-  const packageJson = await fs.readJson(PACKAGE_JSON_PATH);
-  const dependencies = packageJson.dependencies || {};
-  
-  // 过滤出需要下载的包（排除 verdaccio、fs-extra、axios等项目依赖）
-  const excludePackages = ['verdaccio', 'fs-extra', 'axios'];
-  const targetDeps = Object.entries(dependencies).filter(([name]) => 
-    !excludePackages.includes(name)
-  );
-  
-  if (targetDeps.length === 0) {
-    console.log('⚠️  package.json 中没有找到需要下载的依赖');
-    console.log('\n💡 提示:');
-    console.log('   在 package.json 的 dependencies 中添加需要的包，例如:');
-    console.log('   "dependencies": {');
-    console.log('     "lodash": "^4.17.21",');
-    console.log('     "express": "^4.18.2"');
-    console.log('   }');
-    return [];
-  }
-  
-  console.log(`找到 ${targetDeps.length} 个主依赖:\n`);
-  targetDeps.forEach(([name, version]) => {
-    console.log(`  - ${name}@${version}`);
-  });
-  console.log();
-  
-  return targetDeps;
-}
-
-// 【关键改进】使用 npm install 完整解析依赖树
-async function installWithFullDependencies(packageName, version) {
-  console.log(`\n[${packageName}@${version}] 开始安装（包含完整依赖链）...`);
+async function downloadPackage(packageName, version) {
+  console.log(`\n正在下载 ${packageName}@${version}...`);
   
   try {
     // 清理版本号前缀（^、~、>= 等）
     const cleanVersion = version.replace(/^[^0-9]*/, '');
     
+    // 获取当前 registry 配置
+    const registry = getCurrentRegistry();
+    
     // 【核心改进】使用 npm install 自动解析并安装所有依赖（包括子依赖）
     // --legacy-peer-deps 避免 peer dependency 冲突
     // npm 会自动递归下载所有层级的依赖
-    const installCmd = `npm install ${packageName}@${cleanVersion} --registry=http://localhost:4873 --no-save --legacy-peer-deps`;
+    const installCmd = `npm install ${packageName}@${cleanVersion} --registry=${registry} --no-save --legacy-peer-deps --no-package-lock`;
     
     console.log(`  执行命令: ${installCmd}`);
     execCommand(installCmd, { stdio: 'pipe' });
@@ -109,42 +77,53 @@ async function getInstalledDependencyTree(rootPackageName) {
   // 递归扫描 node_modules 中的所有包
   async function scanPackage(packagePath, depth = 0) {
     const packageJsonPath = path.join(packagePath, 'package.json');
-    
-    if (!(await fs.pathExists(packageJsonPath))) {
-      return;
+    const hasPackageJson = await fs.pathExists(packageJsonPath);
+
+    if (hasPackageJson) {
+      const packageJson = await fs.readJson(packageJsonPath);
+      const packageName = packageJson.name;
+      const packageVersion = packageJson.version;
+      const packageKey = `${packageName}@${packageVersion}`;
+      
+      // 避免重复处理
+      if (visited.has(packageKey)) {
+        return;
+      }
+      visited.add(packageKey);
+      
+      // 记录包信息
+      installedPackages.push({
+        name: packageName,
+        version: packageVersion,
+        description: packageJson.description || '',
+        license: packageJson.license || '',
+        depth: depth,
+        isRoot: depth === 0,
+        dependencies: packageJson.dependencies || {},
+        installedAt: new Date().toISOString(),
+        path: packagePath
+      });
     }
-    
-    const packageJson = await fs.readJson(packageJsonPath);
-    const packageName = packageJson.name;
-    const packageVersion = packageJson.version;
-    const packageKey = `${packageName}@${packageVersion}`;
-    
-    // 避免重复处理
-    if (visited.has(packageKey)) {
-      return;
-    }
-    visited.add(packageKey);
-    
-    // 记录包信息
-    installedPackages.push({
-      name: packageName,
-      version: packageVersion,
-      description: packageJson.description || '',
-      license: packageJson.license || '',
-      depth: depth,
-      isRoot: depth === 0,
-      dependencies: packageJson.dependencies || {},
-      installedAt: new Date().toISOString()
-    });
-    
-    // 递归处理子依赖
-    if (depth < 5) { // 限制深度，避免无限递归
-      const depsPath = path.join(packagePath, 'node_modules');
-      if (await fs.pathExists(depsPath)) {
-        const subPackages = await fs.readdir(depsPath);
-        for (const subPkg of subPackages) {
-          if (!subPkg.startsWith('.')) {
-            await scanPackage(path.join(depsPath, subPkg), depth + 1);
+
+    // 递归处理子依赖或 scoped 目录
+    if (depth < 10) {
+      if (hasPackageJson) {
+        const depsPath = path.join(packagePath, 'node_modules');
+        if (await fs.pathExists(depsPath)) {
+          const subPackages = await fs.readdir(depsPath);
+          for (const subPkg of subPackages) {
+            if (!subPkg.startsWith('.')) {
+              await scanPackage(path.join(depsPath, subPkg), depth + 1);
+            }
+          }
+        }
+      } else {
+        const items = await fs.readdir(packagePath);
+        for (const item of items) {
+          if (item.startsWith('.')) continue;
+          const childPath = path.join(packagePath, item);
+          if ((await fs.stat(childPath)).isDirectory()) {
+            await scanPackage(childPath, depth + 1);
           }
         }
       }
@@ -178,30 +157,34 @@ async function savePackageInfo(packageInfo) {
 }
 
 // 同步包到离线文件夹
-async function syncToOffline(packageName) {
-  const nodeModulesPath = path.join(NODE_MODULES_PATH, packageName);
-  const safeFileName = packageName.replace(/\//g, '_').replace(/@/g, 'at_');
-  const targetPath = path.join(OFFLINE_DIR, safeFileName);
+async function syncToOffline(packageInfo) {
+  const sourcePath = packageInfo.path || path.join(NODE_MODULES_PATH, packageInfo.name);
+  const safeFileName = packageInfo.name.replace(/\//g, '_').replace(/@/g, 'at_');
+  const versionedTargetPath = path.join(OFFLINE_DIR, `${safeFileName}@${packageInfo.version}`);
   
-  if (await fs.pathExists(nodeModulesPath)) {
+  if (await fs.pathExists(sourcePath)) {
     try {
-      await fs.copy(nodeModulesPath, targetPath, { overwrite: true });
-      console.log(`✓ ${packageName} 已同步到离线文件夹`);
+      await fs.copy(sourcePath, versionedTargetPath, { overwrite: true });
+      console.log(`✓ ${packageInfo.name}@${packageInfo.version} 已同步到离线文件夹`);
       return true;
     } catch (error) {
-      console.error(`✗ ${packageName} 同步失败:`, error.message);
+      console.error(`✗ ${packageInfo.name}@${packageInfo.version} 同步失败:`, error.message);
       return false;
     }
   } else {
-    console.log(`⚠ ${packageName} 在 node_modules 中不存在`);
+    console.log(`⚠ ${packageInfo.name}@${packageInfo.version} 在 node_modules 中不存在`);
     return false;
   }
 }
 
 // 生成文档
 async function generateDocumentation(packageInfo) {
-  const safeFileName = packageInfo.name.replace(/\//g, '_').replace(/@/g, 'at_');
-  const docPath = path.join(DOCS_DIR, `${safeFileName}.md`);
+  console.log(`正在为 ${packageInfo.name} 生成文档...`);
+  
+  // 获取当前 registry 配置
+  const registry = getCurrentRegistry();
+  
+  const docPath = path.join(DOCS_DIR, `${packageInfo.name.replace(/\//g, '_').replace(/@/g, 'at_')}.md`);
   
   const docContent = `# ${packageInfo.name}
 
@@ -220,7 +203,7 @@ ${packageInfo.repository ? `## 仓库\n\n[${typeof packageInfo.repository.url ==
 ## 使用说明
 
 \`\`\`bash
-npm install ${packageInfo.name}@${packageInfo.version} --registry=http://localhost:4873
+npm install ${packageInfo.name}@${packageInfo.version} --registry=${registry}
 \`\`\`
 
 ---
@@ -278,7 +261,7 @@ async function batchDownload() {
       const [name, version] = dependencies[i];
       console.log(`\n========== [${i + 1}/${dependencies.length}] 处理主依赖: ${name}@${version} ==========`);
       
-      const result = await installWithFullDependencies(name, version);
+      const result = await downloadPackage(name, version);
       allResults.push(result);
       
       if (result.success) {
@@ -319,7 +302,7 @@ async function batchDownload() {
     
     let syncedCount = 0;
     for (const [key, pkgInfo] of allInstalledPackages) {
-      const synced = await syncToOffline(pkgInfo.name);
+      const synced = await syncToOffline(pkgInfo);
       if (synced) {
         syncedCount++;
       }

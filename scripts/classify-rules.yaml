@@ -1,0 +1,124 @@
+# 文档分类规则配置
+# classify-rules.yaml
+
+# 分类规则列表（按优先级排序）
+rules:
+  # 快速开始类文档
+  - name: 快速开始
+    category: 快速开始
+    targetDir: docs/01-快速开始
+    priority: 1
+    filenameKeywords:
+      - 快速
+      - 快速开始
+      - 快速入门
+      - 快速上手
+      - 快速操作
+      - QUICKSTART
+      - README
+    titleKeywords:
+      - 快速开始
+      - 快速入门
+      - 快速上手
+      - 快速操作
+
+  # 内网发布类文档
+  - name: 内网发布
+    category: 内网发布
+    targetDir: docs/03-内网发布
+    priority: 2
+    filenameKeywords:
+      - 内网
+      - 发布
+      - Verdaccio
+      - INTERNAL
+      - PUBLISH
+    pathPatterns:
+      - '**/内网/**'
+      - '**/internal/**'
+    titleKeywords:
+      - 内网发布
+      - 内网使用
+      - Verdaccio
+
+  # Git配置类文档
+  - name: Git配置
+    category: Git配置
+    targetDir: docs/04-Git配置
+    priority: 3
+    filenameKeywords:
+      - Git
+      - GitHub
+      - GIT
+      - GITHUB
+      - .gitignore
+    titleKeywords:
+      - Git配置
+      - Git忽略
+      - GitHub登录
+
+  # 问题修复类文档
+  - name: 问题修复
+    category: 问题修复
+    targetDir: docs/05-问题修复
+    priority: 4
+    filenameKeywords:
+      - 修复
+      - Bug
+      - FIX
+      - BUGFIX
+      - 解决
+    titleKeywords:
+      - 修复
+      - Bug修复
+      - 问题修复
+      - 解决方案
+
+  # 故障排查类文档
+  - name: 故障排查
+    category: 故障排查
+    targetDir: docs/06-故障排查
+    priority: 5
+    filenameKeywords:
+      - 故障
+      - 排查
+      - TROUBLESHOOTING
+      - E503
+      - ERESOLVE
+    titleKeywords:
+      - 故障排查
+      - 错误
+      - 问题诊断
+      - 根本原因
+
+  # 技术文档类文档
+  - name: 技术文档
+    category: 技术文档
+    targetDir: docs/07-技术文档
+    priority: 6
+    filenameKeywords:
+      - 技术文档
+      - CHANGELOG
+      - PROJECT-SUMMARY
+      - Windows
+    titleKeywords:
+      - 变更日志
+      - 项目总结
+      - 兼容性
+
+# 默认排除的目录和文件
+excludePatterns:
+  - 'node_modules/**'
+  - '.git/**'
+  - '.env/**'
+  - 'dist/**'
+  - 'build/**'
+  - '_old_docs_backup/**'
+  - '_classify_backup_*/**'
+  - '.codeartsdoer/**'
+
+# 未分类文档的目标目录
+unclassifiedDir: docs/未分类
+
+# 索引文件名称
+indexFileName: README.md

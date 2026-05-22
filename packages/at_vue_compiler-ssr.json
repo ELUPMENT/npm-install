@@ -1,0 +1,14 @@
+{
+  "name": "@vue/compiler-ssr",
+  "version": "3.5.34",
+  "installedAt": "2026-05-22T07:03:11.708Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "@vue/compiler-ssr",
+  "dependencies": {
+    "@vue/shared": "3.5.34",
+    "@vue/compiler-dom": "3.5.34"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

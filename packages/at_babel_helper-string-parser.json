@@ -1,0 +1,11 @@
+{
+  "name": "@babel/helper-string-parser",
+  "version": "7.27.1",
+  "installedAt": "2026-05-22T01:16:58.199Z",
+  "registry": "http://localhost:4873",
+  "description": "A utility package to parse strings",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 3
+}

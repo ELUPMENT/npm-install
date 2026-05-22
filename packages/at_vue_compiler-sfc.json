@@ -1,15 +1,21 @@
 {
   "name": "@vue/compiler-sfc",
-  "version": "3.5.0",
+  "version": "3.5.34",
+  "installedAt": "2026-05-22T07:03:11.706Z",
+  "registry": "https://registry.npmjs.org",
   "description": "@vue/compiler-sfc",
-  "license": "MIT",
-  "author": "Evan You",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/vuejs/core.git",
-    "directory": "packages/compiler-sfc"
+  "dependencies": {
+    "postcss": "^8.5.14",
+    "@vue/shared": "3.5.34",
+    "magic-string": "^0.30.21",
+    "@babel/parser": "^7.29.3",
+    "estree-walker": "^2.0.2",
+    "source-map-js": "^1.2.1",
+    "@vue/compiler-dom": "3.5.34",
+    "@vue/compiler-ssr": "3.5.34",
+    "@vue/compiler-core": "3.5.34"
   },
-  "homepage": "https://github.com/vuejs/core/tree/main/packages/compiler-sfc#readme",
-  "installedAt": "2026-04-27T06:04:59.813Z",
-  "source": "batch-download"
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
 }

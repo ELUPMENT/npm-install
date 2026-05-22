@@ -1,0 +1,11 @@
+{
+  "name": "nanoid",
+  "version": "3.3.11",
+  "installedAt": "2026-05-22T07:03:11.707Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "A tiny (116 bytes), secure URL-friendly unique string ID generator",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 3
+}

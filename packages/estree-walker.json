@@ -1,0 +1,11 @@
+{
+  "name": "estree-walker",
+  "version": "2.0.2",
+  "installedAt": "2026-05-22T07:03:11.705Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "Traverse an ESTree-compliant AST",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 3
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@babel/types",
+  "version": "7.29.0",
+  "installedAt": "2026-05-22T01:16:58.198Z",
+  "registry": "http://localhost:4873",
+  "description": "Babel Types is a Lodash-esque utility library for AST nodes",
+  "dependencies": {
+    "@babel/helper-string-parser": "^7.27.1",
+    "@babel/helper-validator-identifier": "^7.28.5"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

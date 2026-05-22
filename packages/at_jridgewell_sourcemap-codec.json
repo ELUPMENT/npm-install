@@ -1,0 +1,11 @@
+{
+  "name": "@jridgewell/sourcemap-codec",
+  "version": "1.5.5",
+  "installedAt": "2026-05-22T07:03:11.708Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "Encode/decode sourcemap mappings",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 3
+}

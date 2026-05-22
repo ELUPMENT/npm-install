@@ -11,6 +11,7 @@ const rl = readline.createInterface({
 const PACKAGES_DIR = path.join(__dirname, '..', 'packages');
 const DOCS_DIR = path.join(__dirname, '..', 'docs');
 const OFFLINE_DIR = path.join(__dirname, '..', 'offline-packages');
+const PUBLIC_REGISTRY = 'https://registry.npmjs.org';
 
 // 确保目录存在
 async function ensureDirectories() {
@@ -43,6 +44,11 @@ function execCommand(command, options = {}) {
   } catch (error) {
     throw new Error(`命令执行失败: ${command}\n错误: ${error.message}`);
   }
+}
+
+// 使用公网 npm registry
+function getCurrentRegistry() {
+  return PUBLIC_REGISTRY;
 }
 
 // 获取包的完整依赖树信息
@@ -112,13 +118,12 @@ async function resolveDependencyTree(packageName, version, depth = 0, visited = 
   }];
   
   // 递归处理直接依赖
-  if (depth < 3 && Object.keys(info.dependencies).length > 0) {
+  if (depth < 6 && Object.keys(info.dependencies).length > 0) {
     console.log(`${indent}└─ 正在解析 ${packageName} 的依赖...`);
     
     for (const [depName, depVersion] of Object.entries(info.dependencies)) {
-      // 清理版本号（去除 ^ ~ 等符号）
-      const cleanVersion = depVersion.replace(/[^0-9.]/g, '') || 'latest';
-      const subDeps = await resolveDependencyTree(depName, cleanVersion, depth + 1, visited);
+      const versionSpec = depVersion || 'latest';
+      const subDeps = await resolveDependencyTree(depName, versionSpec, depth + 1, visited);
       result.push(...subDeps);
     }
   }
@@ -126,11 +131,16 @@ async function resolveDependencyTree(packageName, version, depth = 0, visited = 
   return result;
 }
 
-// 批量安装依赖
+// 安装所有依赖包（按层级顺序）
 async function installPackages(packages) {
+  // 去重
   const uniquePackages = [...new Set(packages.map(p => `${p.name}@${p.version}`))];
   
   console.log(`\n开始安装 ${uniquePackages.length} 个包...`);
+  
+  // 获取当前 registry 配置
+  const registry = getCurrentRegistry();
+  console.log(`📦 使用 registry: ${registry}\n`);
   
   let successCount = 0;
   let failCount = 0;
@@ -141,7 +151,7 @@ async function installPackages(packages) {
       console.log(`\n[${successCount + failCount + 1}/${uniquePackages.length}] 安装 ${packageSpec}...`);
       
       // 添加 --legacy-peer-deps 避免 peer dependency 冲突
-      const installCmd = `npm install ${packageSpec} --registry=http://localhost:4873 --no-save --legacy-peer-deps`;
+      const installCmd = `npm install ${packageSpec} --registry=${registry} --no-save --legacy-peer-deps --no-package-lock`;
       execSync(installCmd, { stdio: 'inherit' });
       
       console.log(`✓ ${packageSpec} 安装成功`);
@@ -178,12 +188,15 @@ async function installPackages(packages) {
 async function savePackageInfos(packages) {
   console.log('\n正在保存包信息...');
   
+  // 获取当前 registry 配置
+  const registry = getCurrentRegistry();
+  
   for (const pkg of packages) {
     const packageInfo = {
       name: pkg.name,
       version: pkg.version,
       installedAt: new Date().toISOString(),
-      registry: 'http://localhost:4873',
+      registry: registry,
       description: pkg.description || '',
       dependencies: pkg.dependencies || {},
       peerDependencies: pkg.peerDependencies || {},
@@ -301,6 +314,10 @@ ${packages.map(pkg => {
   
   // 为每个包生成单独文档
   let generatedCount = 0;
+  
+  // 获取当前 registry 配置
+  const registry = getCurrentRegistry();
+  
   for (const pkg of packages) {
     const docContent = `# ${pkg.name} 依赖文档
 
@@ -309,14 +326,14 @@ ${packages.map(pkg => {
 - **包名**: ${pkg.name}
 - **版本**: ${pkg.version}
 - **安装时间**: ${new Date().toLocaleString('zh-CN')}
-- **仓库地址**: http://localhost:4873
+- **仓库地址**: ${registry}
 - **依赖层级**: ${pkg.depth === 0 ? '主包' : `L${pkg.depth} (传递依赖)`}
 - **描述**: ${pkg.description || ''}
 
 ## 安装命令
 
 \`\`\`bash
-npm install ${pkg.name}@${pkg.version} --registry=http://localhost:4873
+npm install ${pkg.name}@${pkg.version} --registry=${registry}
 \`\`\`
 
 ${Object.keys(pkg.dependencies || {}).length > 0 ? `
@@ -360,48 +377,22 @@ ${Object.entries(pkg.peerDependencies).map(([name, ver]) => `| ${name} | ${ver} 
   console.log(`✓ 已生成 ${generatedCount} 个包文档`);
 }
 
-// 同步所有包到离线文件夹
+// 同步所有包到离线文件夹（支持多版本）
 async function syncAllToOffline() {
-  console.log('\n正在同步所有包到离线文件夹...');
+  console.log('\n正在同步所有包到离线文件夹（支持多版本）...');
   
-  const nodeModulesPath = path.join(__dirname, '..', 'node_modules');
-  const packageFiles = await fs.readdir(PACKAGES_DIR);
+  // 调用 sync-to-offline.js 脚本，它已经实现了多版本支持
+  const { execSync } = require('child_process');
+  const syncScriptPath = path.join(__dirname, 'sync-to-offline.js');
   
-  let syncedCount = 0;
-  let skippedCount = 0;
-  
-  for (const file of packageFiles) {
-    if (!file.endsWith('.json')) continue;
-    
-    const packageInfoPath = path.join(PACKAGES_DIR, file);
-    const packageInfo = await fs.readJson(packageInfoPath);
-    
-    const packageName = packageInfo.name;
-    
-    // Windows 兼容的文件名处理
-    const safeFileName = packageName.replace(/\//g, '_').replace(/@/g, 'at_');
-    const sourcePath = path.join(nodeModulesPath, packageName);
-    const targetPath = path.join(OFFLINE_DIR, safeFileName);
-    
-    console.log(`正在同步: ${packageName}...`);
-    
-    if (await fs.pathExists(sourcePath)) {
-      try {
-        await fs.copy(sourcePath, targetPath);
-        console.log(`✓ ${packageName} 同步成功`);
-        syncedCount++;
-      } catch (error) {
-        console.error(`✗ ${packageName} 同步失败:`, error.message);
-      }
-    } else {
-      console.log(`⚠ ${packageName} 在 node_modules 中不存在，跳过`);
-      skippedCount++;
-    }
+  try {
+    const isWindows = process.platform === 'win32';
+    const command = isWindows ? `cmd /c "node "${syncScriptPath}""` : `node "${syncScriptPath}"`;
+    execSync(command, { stdio: 'inherit' });
+    console.log('\n✓ 同步完成（包含所有版本）');
+  } catch (error) {
+    console.error('✗ 同步失败:', error.message);
   }
-  
-  console.log(`\n=== 同步完成 ===`);
-  console.log(`成功: ${syncedCount} 个`);
-  console.log(`跳过: ${skippedCount} 个`);
 }
 
 // 运行主函数
