@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-05-25T10:45:15.996Z",
+  "total": 1,
+  "success": 0,
+  "failed": 1,
+  "results": [
+    {
+      "packageName": "https-proxy-agent",
+      "version": "5.0.1",
+      "success": false,
+      "error": "Command failed: tar -xzf \"C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\.temp-fix\\https-proxy-agent@5.0.1_1779705914229\\https-proxy-agent-5.0.1.tgz\" -C \"C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\.temp-fix\\https-proxy-agent@5.0.1_1779705914229\\extracted\"\ntar (child): Cannot connect to 5.0.1_1779705914229\\https-proxy-agent-5.0.1.tgz: resolve failed\n\ngzip: stdin: unexpected end of file\ntar: Child returned status 128\ntar: Error is not recoverable: exiting now\n"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-05-25T10:46:58.606Z",
+  "total": 1,
+  "success": 0,
+  "failed": 1,
+  "results": [
+    {
+      "packageName": "https-proxy-agent",
+      "version": "5.0.1",
+      "success": false,
+      "error": null
+    }
+  ]
+}

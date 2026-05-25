@@ -1,0 +1,11 @@
+{
+  "name": "ms",
+  "version": "2.1.1",
+  "installedAt": "2026-05-25T07:48:52.068Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "Tiny millisecond conversion utility",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

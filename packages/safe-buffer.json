@@ -1,0 +1,11 @@
+{
+  "name": "safe-buffer",
+  "version": "5.0.1",
+  "installedAt": "2026-05-25T07:48:52.070Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "Safer Node.js Buffer API",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 3
+}

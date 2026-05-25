@@ -196,15 +196,14 @@ async function publishToLocal() {
         try {
           // 第一次尝试：使用 --ignore-scripts 和 --registry 发布
           const publishCmd = isWindows
-            ? `cd /d "${packagePath}" && npm publish --registry ${LOCAL_REGISTRY} --offline --ignore-scripts`
-            : `cd "${packagePath}" && npm publish --registry ${LOCAL_REGISTRY} --offline --ignore-scripts`;
+            ? `cd /d "${packagePath}" && npm publish --registry ${LOCAL_REGISTRY} --ignore-scripts`
+            : `cd "${packagePath}" && npm publish --registry ${LOCAL_REGISTRY} --ignore-scripts`;
           
           execSync(publishCmd, {
             stdio: 'pipe',
             timeout: 60000,
             env: {
               ...process.env,
-              NPM_CONFIG_OFFLINE: 'true',
               NPM_CONFIG_REGISTRY: LOCAL_REGISTRY
             }
           });
@@ -266,15 +265,14 @@ async function publishToLocal() {
                 
                 // 第二次尝试：移除 scripts 后发布，指定注册表
                 const retryCmd = isWindows
-                  ? `cd /d "${packagePath}" && npm publish --registry ${LOCAL_REGISTRY} --offline`
-                  : `cd "${packagePath}" && npm publish --registry ${LOCAL_REGISTRY} --offline`;
+                  ? `cd /d "${packagePath}" && npm publish --registry ${LOCAL_REGISTRY}`
+                  : `cd "${packagePath}" && npm publish --registry ${LOCAL_REGISTRY}`;
                 
                 execSync(retryCmd, {
                   stdio: 'pipe',
                   timeout: 60000,
                   env: {
                     ...process.env,
-                    NPM_CONFIG_OFFLINE: 'true',
                     NPM_CONFIG_REGISTRY: LOCAL_REGISTRY
                   }
                 });

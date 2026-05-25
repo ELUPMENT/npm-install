@@ -1,0 +1,1 @@
+export { ConfigManager, type DependencyFixConfig, createDefaultConfig, validateConfigPath } from './config';

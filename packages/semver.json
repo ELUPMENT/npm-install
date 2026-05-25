@@ -1,0 +1,13 @@
+{
+  "name": "semver",
+  "version": "7.5.4",
+  "installedAt": "2026-05-25T07:48:52.071Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "The semantic version parser used by npm.",
+  "dependencies": {
+    "lru-cache": "^6.0.0"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

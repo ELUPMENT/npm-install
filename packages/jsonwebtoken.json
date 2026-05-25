@@ -1,0 +1,22 @@
+{
+  "name": "jsonwebtoken",
+  "version": "9.0.3",
+  "installedAt": "2026-05-25T07:48:52.066Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "JSON Web Token implementation (symmetric and asymmetric)",
+  "dependencies": {
+    "ms": "^2.1.1",
+    "jws": "^4.0.1",
+    "semver": "^7.5.4",
+    "lodash.once": "^4.0.0",
+    "lodash.includes": "^4.3.0",
+    "lodash.isnumber": "^3.0.3",
+    "lodash.isstring": "^4.0.1",
+    "lodash.isboolean": "^3.0.3",
+    "lodash.isinteger": "^4.0.4",
+    "lodash.isplainobject": "^4.0.6"
+  },
+  "peerDependencies": {},
+  "isTransitive": false,
+  "depth": 0
+}

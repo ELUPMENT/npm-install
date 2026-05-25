@@ -1,0 +1,11 @@
+{
+  "name": "lodash.isstring",
+  "version": "4.0.1",
+  "installedAt": "2026-05-25T07:48:52.078Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "The lodash method `_.isString` exported as a module.",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

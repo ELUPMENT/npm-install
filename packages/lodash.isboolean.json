@@ -1,0 +1,11 @@
+{
+  "name": "lodash.isboolean",
+  "version": "3.0.3",
+  "installedAt": "2026-05-25T07:48:52.078Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "The lodash method `_.isBoolean` exported as a module.",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

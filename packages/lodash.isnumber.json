@@ -1,0 +1,11 @@
+{
+  "name": "lodash.isnumber",
+  "version": "3.0.3",
+  "installedAt": "2026-05-25T07:48:52.077Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "The lodash method `_.isNumber` exported as a module.",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

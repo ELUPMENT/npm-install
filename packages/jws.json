@@ -1,0 +1,14 @@
+{
+  "name": "jws",
+  "version": "4.0.1",
+  "installedAt": "2026-05-25T07:48:52.069Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "Implementation of JSON Web Signatures",
+  "dependencies": {
+    "jwa": "^2.0.1",
+    "safe-buffer": "^5.0.1"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

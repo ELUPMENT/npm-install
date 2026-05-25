@@ -1,0 +1,11 @@
+{
+  "name": "lodash.isplainobject",
+  "version": "4.0.6",
+  "installedAt": "2026-05-25T07:48:52.079Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "The lodash method `_.isPlainObject` exported as a module.",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

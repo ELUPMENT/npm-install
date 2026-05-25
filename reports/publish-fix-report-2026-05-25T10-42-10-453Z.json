@@ -1,0 +1,2401 @@
+{
+  "timestamp": "2026-05-25T10:42:10.454Z",
+  "totalPackages": 629,
+  "problemPackages": 118,
+  "categories": {
+    "globPattern": 0,
+    "missingEntry": 26,
+    "uncoveredDirs": 38,
+    "missingDirInFiles": 79
+  },
+  "details": [
+    {
+      "name": "abort-controller",
+      "version": "3.0.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\abort-controller@3.0.0",
+      "files": [
+        "dist",
+        "polyfill.*",
+        "browser.*"
+      ],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"dist/abort-controller\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"polyfill.*\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"browser.*\""
+        }
+      ]
+    },
+    {
+      "name": "accepts",
+      "version": "1.3.8",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\accepts@1.3.8",
+      "files": [
+        "LICENSE",
+        "HISTORY.md",
+        "index.js"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"HISTORY.md\""
+        }
+      ]
+    },
+    {
+      "name": "agent-base",
+      "version": "6.0.2",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\agent-base@6.0.2",
+      "files": [
+        "dist/src",
+        "src"
+      ],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"dist/src/index\""
+        },
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: types=\"dist/src/index\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist]"
+        }
+      ]
+    },
+    {
+      "name": "@babel/parser",
+      "version": "7.29.2",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_babel_parser@7.29.2",
+      "files": [
+        "bin",
+        "lib",
+        "typings/babel-parser.d.ts",
+        "index.cjs"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"index.cjs\""
+        }
+      ]
+    },
+    {
+      "name": "@babel/parser",
+      "version": "7.29.3",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_babel_parser@7.29.3",
+      "files": [
+        "bin",
+        "lib",
+        "typings/babel-parser.d.ts",
+        "index.cjs"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"index.cjs\""
+        }
+      ]
+    },
+    {
+      "name": "@eslint-community/eslint-utils",
+      "version": "4.9.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_eslint-community_eslint-utils@4.9.1",
+      "files": [
+        "index.*"
+      ],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"index\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"index.*\""
+        }
+      ]
+    },
+    {
+      "name": "@eslint-community/regexpp",
+      "version": "4.12.2",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_eslint-community_regexpp@4.12.2",
+      "files": [
+        "index.*"
+      ],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"index\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"index.*\""
+        }
+      ]
+    },
+    {
+      "name": "@nodelib/fs.scandir",
+      "version": "2.1.5",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_nodelib_fs.scandir@2.1.5",
+      "files": [
+        "out/**",
+        "!out/**/*.map",
+        "!out/**/*.spec.*"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"out/**\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!out/**/*.map\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!out/**/*.spec.*\""
+        }
+      ]
+    },
+    {
+      "name": "@nodelib/fs.stat",
+      "version": "2.0.5",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_nodelib_fs.stat@2.0.5",
+      "files": [
+        "out/**",
+        "!out/**/*.map",
+        "!out/**/*.spec.*"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"out/**\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!out/**/*.map\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!out/**/*.spec.*\""
+        }
+      ]
+    },
+    {
+      "name": "@nodelib/fs.walk",
+      "version": "1.2.8",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_nodelib_fs.walk@1.2.8",
+      "files": [
+        "out/**",
+        "!out/**/*.map",
+        "!out/**/*.spec.*",
+        "!out/**/tests/**"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"out/**\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!out/**/*.map\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!out/**/*.spec.*\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!out/**/tests/**\""
+        }
+      ]
+    },
+    {
+      "name": "@sxzz/popperjs-es",
+      "version": "2.11.7",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_sxzz_popperjs-es@2.11.7",
+      "files": [
+        "index.d.ts",
+        "/dist",
+        "/lib"
+      ],
+      "issues": [
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist, lib]"
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/eslint-plugin",
+      "version": "8.57.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_typescript-eslint_eslint-plugin@8.57.1",
+      "files": [
+        "dist",
+        "!*.tsbuildinfo",
+        "index.d.ts",
+        "raw-plugin.d.ts",
+        "rules.d.ts",
+        "package.json",
+        "./README.md",
+        "LICENSE"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!*.tsbuildinfo\""
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/parser",
+      "version": "8.57.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_typescript-eslint_parser@8.57.1",
+      "files": [
+        "dist",
+        "!*.tsbuildinfo",
+        "README.md",
+        "LICENSE"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!*.tsbuildinfo\""
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/project-service",
+      "version": "8.57.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_typescript-eslint_project-service@8.57.1",
+      "files": [
+        "dist",
+        "!*.tsbuildinfo",
+        "package.json",
+        "README.md",
+        "LICENSE"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!*.tsbuildinfo\""
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/scope-manager",
+      "version": "8.57.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_typescript-eslint_scope-manager@8.57.1",
+      "files": [
+        "dist",
+        "!*.tsbuildinfo",
+        "package.json",
+        "README.md",
+        "LICENSE"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!*.tsbuildinfo\""
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/tsconfig-utils",
+      "version": "8.57.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_typescript-eslint_tsconfig-utils@8.57.1",
+      "files": [
+        "dist",
+        "!*.tsbuildinfo",
+        "package.json",
+        "README.md",
+        "LICENSE"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!*.tsbuildinfo\""
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/type-utils",
+      "version": "8.57.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_typescript-eslint_type-utils@8.57.1",
+      "files": [
+        "dist",
+        "!*.tsbuildinfo",
+        "package.json",
+        "README.md",
+        "LICENSE"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!*.tsbuildinfo\""
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/types",
+      "version": "8.57.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_typescript-eslint_types@8.57.1",
+      "files": [
+        "dist",
+        "!*.tsbuildinfo",
+        "package.json",
+        "README.md",
+        "LICENSE"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!*.tsbuildinfo\""
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/typescript-estree",
+      "version": "8.57.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_typescript-eslint_typescript-estree@8.57.1",
+      "files": [
+        "dist",
+        "!*.tsbuildinfo",
+        "README.md",
+        "LICENSE"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!*.tsbuildinfo\""
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/utils",
+      "version": "8.57.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_typescript-eslint_utils@8.57.1",
+      "files": [
+        "dist",
+        "!*.tsbuildinfo",
+        "package.json",
+        "README.md",
+        "LICENSE"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!*.tsbuildinfo\""
+        }
+      ]
+    },
+    {
+      "name": "@typescript-eslint/visitor-keys",
+      "version": "8.57.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_typescript-eslint_visitor-keys@8.57.1",
+      "files": [
+        "dist",
+        "!*.tsbuildinfo",
+        "package.json",
+        "README.md",
+        "LICENSE"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!*.tsbuildinfo\""
+        }
+      ]
+    },
+    {
+      "name": "@vitest/expect",
+      "version": "2.1.9",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_vitest_expect@2.1.9",
+      "files": [
+        "*.d.ts",
+        "dist"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.d.ts\""
+        }
+      ]
+    },
+    {
+      "name": "@vitest/mocker",
+      "version": "2.1.9",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_vitest_mocker@2.1.9",
+      "files": [
+        "*.d.ts",
+        "dist"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.d.ts\""
+        }
+      ]
+    },
+    {
+      "name": "@vitest/pretty-format",
+      "version": "2.1.9",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_vitest_pretty-format@2.1.9",
+      "files": [
+        "*.d.ts",
+        "dist"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.d.ts\""
+        }
+      ]
+    },
+    {
+      "name": "@vitest/runner",
+      "version": "2.1.9",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_vitest_runner@2.1.9",
+      "files": [
+        "*.d.ts",
+        "dist"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.d.ts\""
+        }
+      ]
+    },
+    {
+      "name": "@vitest/snapshot",
+      "version": "2.1.9",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_vitest_snapshot@2.1.9",
+      "files": [
+        "*.d.ts",
+        "dist"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.d.ts\""
+        }
+      ]
+    },
+    {
+      "name": "@vitest/utils",
+      "version": "2.1.9",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_vitest_utils@2.1.9",
+      "files": [
+        "*.d.ts",
+        "dist"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.d.ts\""
+        }
+      ]
+    },
+    {
+      "name": "@vueuse/metadata",
+      "version": "10.11.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_vueuse_metadata@10.11.1",
+      "files": [
+        "index.*"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"index.*\""
+        }
+      ]
+    },
+    {
+      "name": "@vue/devtools-api",
+      "version": "6.6.4",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_vue_devtools-api@6.6.4",
+      "files": [
+        "lib/cjs",
+        "lib/esm"
+      ],
+      "issues": [
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [lib]"
+        }
+      ]
+    },
+    {
+      "name": "@vue/devtools-kit",
+      "version": "7.7.9",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\at_vue_devtools-kit@7.7.9",
+      "files": [
+        "**.d.ts",
+        "dist"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"**.d.ts\""
+        }
+      ]
+    },
+    {
+      "name": "body-parser",
+      "version": "1.20.3",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\body-parser@1.20.3",
+      "files": [
+        "lib/",
+        "LICENSE",
+        "HISTORY.md",
+        "SECURITY.md",
+        "index.js"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"SECURITY.md\""
+        }
+      ]
+    },
+    {
+      "name": "cac",
+      "version": "6.7.14",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\cac@6.7.14",
+      "files": [
+        "dist",
+        "!**/__test__/**",
+        "/mod.js",
+        "/mod.ts",
+        "/deno",
+        "/index-compat.js"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!**/__test__/**\""
+        }
+      ]
+    },
+    {
+      "name": "chai",
+      "version": "5.3.3",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\chai@5.3.3",
+      "files": [
+        "chai.js",
+        "index.js",
+        "lib",
+        "register-*.js"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"register-*.js\""
+        }
+      ]
+    },
+    {
+      "name": "check-error",
+      "version": "2.1.3",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\check-error@2.1.3",
+      "files": [
+        "index.js",
+        "check-error.js"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"check-error.js\""
+        }
+      ]
+    },
+    {
+      "name": "chokidar",
+      "version": "3.6.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\chokidar@3.6.0",
+      "files": [
+        "index.js",
+        "lib/*.js",
+        "types/index.d.ts"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"lib/*.js\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [lib, types]"
+        }
+      ]
+    },
+    {
+      "name": "clipanion",
+      "version": "4.0.0-rc.4",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\clipanion@4.0.0-rc.4",
+      "files": [
+        "lib"
+      ],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"lib/advanced/index\""
+        }
+      ]
+    },
+    {
+      "name": "colorette",
+      "version": "2.0.20",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\colorette@2.0.20",
+      "files": [
+        "*.*(c)[tj]s*"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.*(c)[tj]s*\""
+        }
+      ]
+    },
+    {
+      "name": "combined-stream",
+      "version": "1.0.8",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\combined-stream@1.0.8",
+      "files": [],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"./lib/combined_stream\""
+        }
+      ]
+    },
+    {
+      "name": "commander",
+      "version": "11.1.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\commander@11.1.0",
+      "files": [
+        "index.js",
+        "lib/*.js",
+        "esm.mjs",
+        "typings/index.d.ts",
+        "typings/esm.d.mts",
+        "package-support.json"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"lib/*.js\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [lib]"
+        }
+      ]
+    },
+    {
+      "name": "commander",
+      "version": "2.20.3",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\commander@2.20.3",
+      "files": [
+        "index.js",
+        "typings/index.d.ts"
+      ],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"index\""
+        }
+      ]
+    },
+    {
+      "name": "cookie-signature",
+      "version": "1.0.6",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\cookie-signature@1.0.6",
+      "files": [],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"index\""
+        }
+      ]
+    },
+    {
+      "name": "cookie",
+      "version": "0.7.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\cookie@0.7.1",
+      "files": [
+        "HISTORY.md",
+        "LICENSE",
+        "README.md",
+        "SECURITY.md",
+        "index.js"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"HISTORY.md\""
+        }
+      ]
+    },
+    {
+      "name": "cors",
+      "version": "2.8.5",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\cors@2.8.5",
+      "files": [
+        "lib/index.js",
+        "CONTRIBUTING.md",
+        "HISTORY.md",
+        "LICENSE",
+        "README.md"
+      ],
+      "issues": [
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [lib]"
+        }
+      ]
+    },
+    {
+      "name": "decimal.js",
+      "version": "10.6.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\decimal.js@10.6.0",
+      "files": [
+        "decimal.js",
+        "decimal.mjs",
+        "decimal.d.ts"
+      ],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"decimal\""
+        }
+      ]
+    },
+    {
+      "name": "deep-eql",
+      "version": "5.0.2",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\deep-eql@5.0.2",
+      "files": [
+        "index.js",
+        "deep-eql.js"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"deep-eql.js\""
+        }
+      ]
+    },
+    {
+      "name": "delayed-stream",
+      "version": "1.0.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\delayed-stream@1.0.0",
+      "files": [],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"./lib/delayed_stream\""
+        }
+      ]
+    },
+    {
+      "name": "encodeurl",
+      "version": "2.0.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\encodeurl@2.0.0",
+      "files": [
+        "LICENSE",
+        "HISTORY.md",
+        "README.md",
+        "index.js"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"HISTORY.md\""
+        }
+      ]
+    },
+    {
+      "name": "entities",
+      "version": "7.0.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\entities@7.0.1",
+      "files": [
+        "decode.js",
+        "decode.d.ts",
+        "escape.js",
+        "escape.d.ts",
+        "dist",
+        "src",
+        "!**/*.spec.ts"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!**/*.spec.ts\""
+        }
+      ]
+    },
+    {
+      "name": "eslint-scope",
+      "version": "7.2.2",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\eslint-scope@7.2.2",
+      "files": [
+        "LICENSE",
+        "README.md",
+        "lib",
+        "dist/eslint-scope.cjs"
+      ],
+      "issues": [
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist]"
+        }
+      ]
+    },
+    {
+      "name": "eslint-visitor-keys",
+      "version": "3.4.3",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\eslint-visitor-keys@3.4.3",
+      "files": [
+        "dist/index.d.ts",
+        "dist/visitor-keys.d.ts",
+        "dist/eslint-visitor-keys.cjs",
+        "dist/eslint-visitor-keys.d.cts",
+        "lib"
+      ],
+      "issues": [
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist]"
+        }
+      ]
+    },
+    {
+      "name": "eslint-visitor-keys",
+      "version": "5.0.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\eslint-visitor-keys@5.0.1",
+      "files": [
+        "dist/index.d.ts",
+        "dist/visitor-keys.d.ts",
+        "dist/eslint-visitor-keys.cjs",
+        "dist/eslint-visitor-keys.d.cts",
+        "lib"
+      ],
+      "issues": [
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist]"
+        }
+      ]
+    },
+    {
+      "name": "espree",
+      "version": "9.6.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\espree@9.6.1",
+      "files": [
+        "lib",
+        "dist/espree.cjs",
+        "espree.js"
+      ],
+      "issues": [
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist]"
+        }
+      ]
+    },
+    {
+      "name": "esprima",
+      "version": "4.0.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\esprima@4.0.1",
+      "files": [
+        "bin",
+        "dist/esprima.js"
+      ],
+      "issues": [
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist]"
+        }
+      ]
+    },
+    {
+      "name": "esquery",
+      "version": "1.7.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\esquery@1.7.0",
+      "files": [
+        "dist/*.js",
+        "dist/*.map",
+        "parser.js",
+        "license.txt",
+        "README.md"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/*.js\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/*.map\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist]"
+        }
+      ]
+    },
+    {
+      "name": "event-target-shim",
+      "version": "5.0.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\event-target-shim@5.0.1",
+      "files": [
+        "dist",
+        "index.d.ts"
+      ],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"dist/event-target-shim\""
+        }
+      ]
+    },
+    {
+      "name": "expect-type",
+      "version": "1.3.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\expect-type@1.3.0",
+      "files": [
+        "dist",
+        "*.md"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.md\""
+        }
+      ]
+    },
+    {
+      "name": "extend",
+      "version": "3.0.2",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\extend@3.0.2",
+      "files": [],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"index\""
+        }
+      ]
+    },
+    {
+      "name": "fast-safe-stringify",
+      "version": "2.1.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\fast-safe-stringify@2.1.1",
+      "files": [],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: types=\"index\""
+        }
+      ]
+    },
+    {
+      "name": "flat-cache",
+      "version": "3.2.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\flat-cache@3.2.0",
+      "files": [
+        "src/cache.js",
+        "src/del.js",
+        "src/utils.js"
+      ],
+      "issues": [
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [src]"
+        }
+      ]
+    },
+    {
+      "name": "follow-redirects",
+      "version": "1.16.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\follow-redirects@1.16.0",
+      "files": [
+        "*.js"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.js\""
+        }
+      ]
+    },
+    {
+      "name": "form-data",
+      "version": "4.0.5",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\form-data@4.0.5",
+      "files": [],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"./lib/form_data\""
+        }
+      ]
+    },
+    {
+      "name": "fs-extra",
+      "version": "11.3.5",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\fs-extra@11.3.5",
+      "files": [
+        "lib/",
+        "!lib/**/__tests__/"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!lib/**/__tests__/\""
+        }
+      ]
+    },
+    {
+      "name": "function-bind",
+      "version": "1.1.2",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\function-bind@1.1.2",
+      "files": [],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"index\""
+        }
+      ]
+    },
+    {
+      "name": "graceful-fs",
+      "version": "4.2.11",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\graceful-fs@4.2.11",
+      "files": [
+        "fs.js",
+        "graceful-fs.js",
+        "legacy-streams.js",
+        "polyfills.js",
+        "clone.js"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"fs.js\""
+        }
+      ]
+    },
+    {
+      "name": "handlebars",
+      "version": "4.7.8",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\handlebars@4.7.8",
+      "files": [
+        "bin",
+        "dist/*.js",
+        "dist/amd/**/*.js",
+        "dist/cjs/**/*.js",
+        "lib",
+        "release-notes.md",
+        "runtime.js",
+        "types/*.d.ts",
+        "runtime.d.ts"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/*.js\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/amd/**/*.js\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/cjs/**/*.js\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"types/*.d.ts\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist, types]"
+        }
+      ]
+    },
+    {
+      "name": "handlebars",
+      "version": "4.7.9",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\handlebars@4.7.9",
+      "files": [
+        "bin",
+        "dist/*.js",
+        "dist/amd/**/*.js",
+        "dist/cjs/**/*.js",
+        "lib",
+        "release-notes.md",
+        "runtime.js",
+        "types/*.d.ts",
+        "runtime.d.ts"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/*.js\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/amd/**/*.js\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/cjs/**/*.js\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"types/*.d.ts\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist, types]"
+        }
+      ]
+    },
+    {
+      "name": "https-proxy-agent",
+      "version": "5.0.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\https-proxy-agent@5.0.1",
+      "files": [
+        "dist"
+      ],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"dist/index\""
+        },
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: types=\"dist/index\""
+        }
+      ]
+    },
+    {
+      "name": "js-beautify",
+      "version": "1.14.6",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\js-beautify@1.14.6",
+      "files": [
+        "js/bin/",
+        "js/lib/*.js",
+        "js/lib/unpackers/",
+        "js/index.js",
+        "js/src/**/*"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"js/lib/*.js\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"js/src/**/*\""
+        }
+      ]
+    },
+    {
+      "name": "kleur",
+      "version": "3.0.3",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\kleur@3.0.3",
+      "files": [
+        "*.js",
+        "*.d.ts"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.js\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.d.ts\""
+        }
+      ]
+    },
+    {
+      "name": "kleur",
+      "version": "4.1.5",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\kleur@4.1.5",
+      "files": [
+        "*.d.ts",
+        "colors.*",
+        "index.*"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.d.ts\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"colors.*\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"index.*\""
+        }
+      ]
+    },
+    {
+      "name": "loupe",
+      "version": "3.2.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\loupe@3.2.1",
+      "files": [
+        "loupe.js",
+        "lib/*"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"lib/*\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [lib]"
+        }
+      ]
+    },
+    {
+      "name": "magic-string",
+      "version": "0.30.21",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\magic-string@0.30.21",
+      "files": [
+        "dist/*",
+        "index.d.ts",
+        "README.md"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/*\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"index.d.ts\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist]"
+        }
+      ]
+    },
+    {
+      "name": "memoize-one",
+      "version": "6.0.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\memoize-one@6.0.0",
+      "files": [
+        "/dist",
+        "/src"
+      ],
+      "issues": [
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist, src]"
+        }
+      ]
+    },
+    {
+      "name": "mime",
+      "version": "2.6.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\mime@2.6.0",
+      "files": [
+        "index.js",
+        "lite.js",
+        "Mime.js",
+        "cli.js",
+        "/types"
+      ],
+      "issues": [
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [types]"
+        }
+      ]
+    },
+    {
+      "name": "mime",
+      "version": "3.0.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\mime@3.0.0",
+      "files": [
+        "index.js",
+        "lite.js",
+        "Mime.js",
+        "cli.js",
+        "/types"
+      ],
+      "issues": [
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [types]"
+        }
+      ]
+    },
+    {
+      "name": "ms",
+      "version": "2.0.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\ms@2.0.0",
+      "files": [
+        "index.js"
+      ],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"./index\""
+        }
+      ]
+    },
+    {
+      "name": "ms",
+      "version": "2.1.2",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\ms@2.1.2",
+      "files": [
+        "index.js"
+      ],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"./index\""
+        }
+      ]
+    },
+    {
+      "name": "ms",
+      "version": "2.1.3",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\ms@2.1.3",
+      "files": [
+        "index.js"
+      ],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"./index\""
+        }
+      ]
+    },
+    {
+      "name": "node-fetch",
+      "version": "2.6.7",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\node-fetch@2.6.7",
+      "files": [
+        "lib/index.js",
+        "lib/index.mjs",
+        "lib/index.es.js",
+        "browser.js"
+      ],
+      "issues": [
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [lib]"
+        }
+      ]
+    },
+    {
+      "name": "nth-check",
+      "version": "2.1.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\nth-check@2.1.1",
+      "files": [
+        "lib/**/*"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"lib/**/*\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [lib]"
+        }
+      ]
+    },
+    {
+      "name": "nwsapi",
+      "version": "2.2.23",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\nwsapi@2.2.23",
+      "files": [],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"./src/nwsapi\""
+        }
+      ]
+    },
+    {
+      "name": "parse5",
+      "version": "7.3.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\parse5@7.3.0",
+      "files": [
+        "dist/cjs/package.json",
+        "dist/**/*.js",
+        "dist/**/*.d.ts"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/**/*.js\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/**/*.d.ts\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist]"
+        }
+      ]
+    },
+    {
+      "name": "picocolors",
+      "version": "1.1.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\picocolors@1.1.1",
+      "files": [
+        "picocolors.*",
+        "types.d.ts"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"picocolors.*\""
+        }
+      ]
+    },
+    {
+      "name": "pinia",
+      "version": "3.0.4",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\pinia@3.0.4",
+      "files": [
+        "dist/*.js",
+        "dist/*.mjs",
+        "dist/*.cjs",
+        "dist/pinia.d.ts",
+        "index.cjs",
+        "LICENSE",
+        "README.md"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/*.js\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/*.mjs\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/*.cjs\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist]"
+        }
+      ]
+    },
+    {
+      "name": "pino",
+      "version": "7.11.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\pino@7.11.0",
+      "files": [
+        "pino.js",
+        "file.js",
+        "pino.d.ts",
+        "bin.js",
+        "browser.js",
+        "pretty.js",
+        "usage.txt",
+        "test",
+        "docs",
+        "example.js",
+        "lib"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"pretty.js\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"usage.txt\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"example.js\""
+        }
+      ]
+    },
+    {
+      "name": "postcss-selector-parser",
+      "version": "6.1.2",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\postcss-selector-parser@6.1.2",
+      "files": [
+        "API.md",
+        "CHANGELOG.md",
+        "LICENSE-MIT",
+        "dist",
+        "postcss-selector-parser.d.ts",
+        "!**/__tests__"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"API.md\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!**/__tests__\""
+        }
+      ]
+    },
+    {
+      "name": "rollup",
+      "version": "4.60.2",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\rollup@4.60.2",
+      "files": [
+        "dist/*.node",
+        "dist/**/*.js",
+        "dist/*.d.ts",
+        "dist/bin/rollup",
+        "dist/es/package.json"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/*.node\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/**/*.js\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/*.d.ts\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist]"
+        }
+      ]
+    },
+    {
+      "name": "rollup",
+      "version": "4.60.4",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\rollup@4.60.4",
+      "files": [
+        "dist/*.node",
+        "dist/**/*.js",
+        "dist/*.d.ts",
+        "dist/bin/rollup",
+        "dist/es/package.json"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/*.node\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/**/*.js\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/*.d.ts\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist]"
+        }
+      ]
+    },
+    {
+      "name": "safer-buffer",
+      "version": "2.1.2",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\safer-buffer@2.1.2",
+      "files": [
+        "Porting-Buffer.md",
+        "Readme.md",
+        "tests.js",
+        "dangerous.js",
+        "safer.js"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"Porting-Buffer.md\""
+        }
+      ]
+    },
+    {
+      "name": "semver",
+      "version": "7.6.3",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\semver@7.6.3",
+      "files": [
+        "bin/",
+        "lib/",
+        "classes/",
+        "functions/",
+        "internal/",
+        "ranges/",
+        "index.js",
+        "preload.js",
+        "range.bnf"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"lib/\""
+        }
+      ]
+    },
+    {
+      "name": "semver",
+      "version": "7.7.4",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\semver@7.7.4",
+      "files": [
+        "bin/",
+        "lib/",
+        "classes/",
+        "functions/",
+        "internal/",
+        "ranges/",
+        "index.js",
+        "preload.js",
+        "range.bnf"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"lib/\""
+        }
+      ]
+    },
+    {
+      "name": "semver",
+      "version": "7.8.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\semver@7.8.1",
+      "files": [
+        "bin/",
+        "lib/",
+        "classes/",
+        "functions/",
+        "internal/",
+        "ranges/",
+        "index.js",
+        "preload.js",
+        "range.bnf"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"lib/\""
+        }
+      ]
+    },
+    {
+      "name": "source-map",
+      "version": "0.6.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\source-map@0.6.1",
+      "files": [
+        "source-map.js",
+        "source-map.d.ts",
+        "lib/",
+        "dist/source-map.debug.js",
+        "dist/source-map.js",
+        "dist/source-map.min.js",
+        "dist/source-map.min.js.map"
+      ],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: types=\"source-map\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist]"
+        }
+      ]
+    },
+    {
+      "name": "speakingurl",
+      "version": "14.0.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\speakingurl@14.0.1",
+      "files": [],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"index\""
+        }
+      ]
+    },
+    {
+      "name": "tar-stream",
+      "version": "3.2.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\tar-stream@3.2.0",
+      "files": [
+        "*.js"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.js\""
+        }
+      ]
+    },
+    {
+      "name": "tinybench",
+      "version": "2.9.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\tinybench@2.9.0",
+      "files": [
+        "dist/**"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/**\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist]"
+        }
+      ]
+    },
+    {
+      "name": "tinyexec",
+      "version": "0.3.2",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\tinyexec@0.3.2",
+      "files": [
+        "dist",
+        "!dist/node_modules",
+        "!dist/cjs/test",
+        "!dist/esm/test"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!dist/node_modules\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!dist/cjs/test\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!dist/esm/test\""
+        }
+      ]
+    },
+    {
+      "name": "tinypool",
+      "version": "0.3.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\tinypool@0.3.0",
+      "files": [
+        "dist/**"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/**\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist]"
+        }
+      ]
+    },
+    {
+      "name": "tinyrainbow",
+      "version": "1.2.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\tinyrainbow@1.2.0",
+      "files": [
+        "dist/**"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/**\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist]"
+        }
+      ]
+    },
+    {
+      "name": "tldts",
+      "version": "6.1.86",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\tldts@6.1.86",
+      "files": [
+        "dist",
+        "src",
+        "index.ts"
+      ],
+      "issues": [
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [bin]"
+        }
+      ]
+    },
+    {
+      "name": "tough-cookie",
+      "version": "4.1.4",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\tough-cookie@4.1.4",
+      "files": [
+        "lib"
+      ],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"./lib/cookie\""
+        }
+      ]
+    },
+    {
+      "name": "tough-cookie",
+      "version": "5.1.2",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\tough-cookie@5.1.2",
+      "files": [
+        "dist/**/*.js",
+        "dist/**/*.d.ts",
+        "!__tests__"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/**/*.js\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/**/*.d.ts\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!__tests__\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist]"
+        }
+      ]
+    },
+    {
+      "name": "tr46",
+      "version": "3.0.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\tr46@3.0.0",
+      "files": [
+        "index.js",
+        "lib/mappingTable.json",
+        "lib/regexes.js",
+        "lib/statusMapping.js"
+      ],
+      "issues": [
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [lib]"
+        }
+      ]
+    },
+    {
+      "name": "typanion",
+      "version": "3.14.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\typanion@3.14.0",
+      "files": [
+        "lib"
+      ],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"lib/index\""
+        }
+      ]
+    },
+    {
+      "name": "typescript",
+      "version": "5.9.3",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\typescript@5.9.3",
+      "files": [
+        "bin",
+        "lib",
+        "!lib/enu",
+        "LICENSE.txt",
+        "README.md",
+        "SECURITY.md",
+        "ThirdPartyNoticeText.txt",
+        "!**/.gitattributes"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!lib/enu\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"!**/.gitattributes\""
+        }
+      ]
+    },
+    {
+      "name": "uri-js",
+      "version": "4.4.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\uri-js@4.4.1",
+      "files": [
+        "dist",
+        "package.json",
+        "yarn.lock",
+        "README.md",
+        "CHANGELOG",
+        "LICENSE"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"CHANGELOG\""
+        }
+      ]
+    },
+    {
+      "name": "utils-merge",
+      "version": "1.0.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\utils-merge@1.0.1",
+      "files": [],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"./index\""
+        }
+      ]
+    },
+    {
+      "name": "validator",
+      "version": "13.12.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\validator@13.12.0",
+      "files": [
+        "index.js",
+        "es",
+        "lib",
+        "README.md",
+        "LICENCE",
+        "validator.js",
+        "validator.min.js"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"LICENCE\""
+        }
+      ]
+    },
+    {
+      "name": "vite-node",
+      "version": "2.1.9",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\vite-node@2.1.9",
+      "files": [
+        "*.d.ts",
+        "*.mjs",
+        "dist"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.d.ts\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.mjs\""
+        }
+      ]
+    },
+    {
+      "name": "vitest",
+      "version": "2.1.9",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\vitest@2.1.9",
+      "files": [
+        "*.cjs",
+        "*.d.cts",
+        "*.d.ts",
+        "*.mjs",
+        "bin",
+        "dist"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.cjs\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.d.cts\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.d.ts\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.mjs\""
+        }
+      ]
+    },
+    {
+      "name": "vue-component-type-helpers",
+      "version": "1.6.5",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\vue-component-type-helpers@1.6.5",
+      "files": [
+        "*.js",
+        "*.d.ts"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.js\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"*.d.ts\""
+        }
+      ]
+    },
+    {
+      "name": "vue-eslint-parser",
+      "version": "9.4.3",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\vue-eslint-parser@9.4.3",
+      "files": [
+        "index.*"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"index.*\""
+        }
+      ]
+    },
+    {
+      "name": "vue-router",
+      "version": "4.6.4",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\vue-router@4.6.4",
+      "files": [
+        "vue-router-auto-resolver.d.mts",
+        "index.js",
+        "vue-router.node.mjs",
+        "vue-router-auto.d.ts",
+        "vue-router-auto-routes.d.ts",
+        "dist/**/*.{js,cjs,mjs}",
+        "dist/**/*.d.{ts,mts}",
+        "vetur/tags.json",
+        "vetur/attributes.json",
+        "README.md"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/**/*.{js,cjs,mjs}\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"dist/**/*.d.{ts,mts}\""
+        },
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"README.md\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [dist]"
+        }
+      ]
+    },
+    {
+      "name": "whatwg-url",
+      "version": "11.0.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\whatwg-url@11.0.0",
+      "files": [
+        "index.js",
+        "webidl2js-wrapper.js",
+        "lib/*.js"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"lib/*.js\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [lib]"
+        }
+      ]
+    },
+    {
+      "name": "which",
+      "version": "2.0.2",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\which@2.0.2",
+      "files": [
+        "which.js",
+        "bin/node-which"
+      ],
+      "issues": [
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [bin]"
+        }
+      ]
+    },
+    {
+      "name": "ws",
+      "version": "8.20.0",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\ws@8.20.0",
+      "files": [
+        "browser.js",
+        "index.js",
+        "lib/*.js",
+        "wrapper.mjs"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"lib/*.js\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [lib]"
+        }
+      ]
+    },
+    {
+      "name": "ws",
+      "version": "8.20.1",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\ws@8.20.1",
+      "files": [
+        "browser.js",
+        "index.js",
+        "lib/*.js",
+        "wrapper.mjs"
+      ],
+      "issues": [
+        {
+          "type": "missing_dir_in_files",
+          "severity": "warning",
+          "message": "files字段声明的目录不存在: \"lib/*.js\""
+        },
+        {
+          "type": "uncovered_dirs",
+          "severity": "warning",
+          "message": "重要目录未被files字段覆盖: [lib]"
+        }
+      ]
+    },
+    {
+      "name": "xtend",
+      "version": "4.0.2",
+      "dir": "C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\xtend@4.0.2",
+      "files": [],
+      "issues": [
+        {
+          "type": "missing_entry",
+          "severity": "critical",
+          "message": "入口文件缺失: main=\"immutable\""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "yallist",
+  "version": "4.0.0",
+  "installedAt": "2026-05-25T07:48:52.072Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "Yet Another Linked List",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 3
+}

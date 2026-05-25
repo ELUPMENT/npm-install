@@ -1,0 +1,14 @@
+{
+  "registryUrl": "https://registry.npmjs.org",
+  "timeoutMs": 30000,
+  "maxRetries": 3,
+  "backupPath": ".backup",
+  "cachePath": ".cache",
+  "logLevel": "info",
+  "enableCache": true,
+  "enableBackup": true,
+  "verifyIntegrity": true,
+  "maxConcurrentDownloads": 5,
+  "blacklist": [],
+  "whitelist": []
+}

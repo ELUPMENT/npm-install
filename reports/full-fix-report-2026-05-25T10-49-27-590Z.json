@@ -1,0 +1,158 @@
+{
+  "timestamp": "2026-05-25T10:49:27.591Z",
+  "total": 25,
+  "success": 24,
+  "failed": 1,
+  "results": [
+    {
+      "packageName": "abort-controller",
+      "version": "3.0.0",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "agent-base",
+      "version": "6.0.2",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "https-proxy-agent",
+      "version": "5.0.1",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "http-proxy-agent",
+      "version": "4.0.1",
+      "success": false,
+      "error": "ENOENT: no such file or directory, scandir 'C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\offline-packages\\http-proxy-agent@4.0.1'"
+    },
+    {
+      "packageName": "combined-stream",
+      "version": "1.0.8",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "delayed-stream",
+      "version": "1.0.0",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "form-data",
+      "version": "4.0.5",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "tough-cookie",
+      "version": "4.1.4",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "commander",
+      "version": "2.20.3",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "cookie-signature",
+      "version": "1.0.6",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "decimal.js",
+      "version": "10.6.0",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "extend",
+      "version": "3.0.2",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "function-bind",
+      "version": "1.1.2",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "ms",
+      "version": "2.0.0",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "ms",
+      "version": "2.1.2",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "ms",
+      "version": "2.1.3",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "nwsapi",
+      "version": "2.2.23",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "speakingurl",
+      "version": "14.0.1",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "utils-merge",
+      "version": "1.0.1",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "xtend",
+      "version": "4.0.2",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "source-map",
+      "version": "0.6.1",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "fast-safe-stringify",
+      "version": "2.1.1",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "event-target-shim",
+      "version": "5.0.1",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "clipanion",
+      "version": "4.0.0-rc.4",
+      "success": true,
+      "error": null
+    },
+    {
+      "packageName": "typanion",
+      "version": "3.14.0",
+      "success": true,
+      "error": null
+    }
+  ]
+}

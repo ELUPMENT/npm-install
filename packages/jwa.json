@@ -1,0 +1,15 @@
+{
+  "name": "jwa",
+  "version": "2.0.1",
+  "installedAt": "2026-05-25T07:48:52.069Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "JWA implementation (supports all JWS algorithms)",
+  "dependencies": {
+    "safe-buffer": "^5.0.1",
+    "ecdsa-sig-formatter": "1.0.11",
+    "buffer-equal-constant-time": "^1.0.1"
+  },
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 2
+}

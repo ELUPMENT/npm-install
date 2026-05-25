@@ -1,0 +1,11 @@
+{
+  "name": "lodash.isinteger",
+  "version": "4.0.4",
+  "installedAt": "2026-05-25T07:48:52.079Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "The lodash method `_.isInteger` exported as a module.",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 1
+}

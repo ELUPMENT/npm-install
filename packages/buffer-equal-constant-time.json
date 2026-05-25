@@ -1,0 +1,11 @@
+{
+  "name": "buffer-equal-constant-time",
+  "version": "1.0.1",
+  "installedAt": "2026-05-25T07:48:52.071Z",
+  "registry": "https://registry.npmjs.org",
+  "description": "Constant-time comparison of Buffers",
+  "dependencies": {},
+  "peerDependencies": {},
+  "isTransitive": true,
+  "depth": 3
+}

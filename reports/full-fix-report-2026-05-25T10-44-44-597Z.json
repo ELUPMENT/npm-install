@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-05-25T10:44:44.598Z",
+  "total": 1,
+  "success": 0,
+  "failed": 1,
+  "results": [
+    {
+      "packageName": "http-proxy-agent",
+      "version": "5.0.0",
+      "success": false,
+      "error": "Command failed: tar -xzf \"http-proxy-agent-5.0.0.tgz\" -C \"C:\\Users\\Admin\\Desktop\\前端AI\\npm发布\\npm-install\\.temp-fix\\http-proxy-agent@5.0.0_1779705882838\\extracted\"\ntar (child): http-proxy-agent-5.0.0.tgz: Cannot open: No such file or directory\ntar (child): Error is not recoverable: exiting now\ntar: Child returned status 2\ntar: Error is not recoverable: exiting now\n"
+    }
+  ]
+}

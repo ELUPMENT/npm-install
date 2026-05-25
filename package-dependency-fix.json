@@ -1,0 +1,76 @@
+{
+  "name": "dependency-fix",
+  "version": "1.0.0",
+  "description": "NPM dependency integrity checker and fixer for incomplete packages in offline environments",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "dependency-fix": "dist/cli/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/cli/cli.ts",
+    "check": "node dist/cli/cli.js check",
+    "check-all": "node dist/cli/cli.js check-all",
+    "fix": "node dist/cli/cli.js fix",
+    "fix-all": "node dist/cli/cli.js fix-all",
+    "validate-api": "node dist/cli/cli.js validate-api",
+    "generate-config": "node dist/cli/cli.js generate-config",
+    "stats": "node dist/cli/cli.js stats",
+    "clear-stats": "node dist/cli/cli.js clear-stats",
+    "test": "jest",
+    "lint": "eslint .",
+    "clean": "rm -rf dist coverage"
+  },
+  "keywords": [
+    "npm",
+    "dependency",
+    "integrity",
+    "fix",
+    "offline",
+    "package",
+    "validator",
+    "repair",
+    "async-validator"
+  ],
+  "author": "NPM Dependency Fixer Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.2.0",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21",
+    "tar": "^7.0.0",
+    "yaml": "^2.3.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.8",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.53.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/dependency-fix.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/dependency-fix/issues"
+  },
+  "homepage": "https://github.com/your-org/dependency-fix#readme",
+  "files": [
+    "dist",
+    "README-dependency-fix.md",
+    "LICENSE",
+    "package.json"
+  ]
+}
